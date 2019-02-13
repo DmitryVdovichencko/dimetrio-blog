@@ -1,0 +1,12 @@
+body{
+    margin:0px;
+    padding: 0px;
+}
+
+
+.layout{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    
+}
