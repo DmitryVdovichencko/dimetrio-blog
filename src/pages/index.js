@@ -1,9 +1,9 @@
 import React from "react"
-import HeroImage from "../components/hero_image/hero_image" 
 import { Link } from "gatsby"
-import Nav from "../components/nav/nav"
-import Header from "../components/header/header"
-import Layout from "../components/layout/layout";
+import Layout from "../components/layout"
+import Header from "../components/header"
+import logo from "../assets/img/web-developer.svg" 
+
 
 
 export default ()=> {
@@ -11,16 +11,21 @@ export default ()=> {
   return <div>
     <Layout>
     <Header>
-    <h1>Dmitry Vdovichenko</h1>
-    <Nav>
-      <Link to="/about-css-modules/">
-        about
+      <Link to="/">
+        <h1>Dmitry Vdovichenko</h1>
       </Link>
-    </Nav>
+   
+      <nav className='nav'>
+        <Link to="/about-css-modules/">
+          about
+        </Link>
+      </nav>
 
-  </Header>
-<HeroImage></HeroImage>
-</Layout>
+      </Header>
+      <div className='hero-image'>
+      <img src={logo} alt="Logo" />
+      </div>
+    </Layout>
   </div>
 
 }

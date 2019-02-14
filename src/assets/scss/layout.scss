@@ -1,0 +1,27 @@
+body{
+    margin:0px;
+    padding: 0px;
+}
+.layout{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    
+}
+.hero-image{
+    display:flex;
+    width:50%;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left:5px;
+    margin-top:-45vh;
+    z-index:2;
+}
+
+.hero-image img{
+   max-width: 100%;
+    height: auto;
+    margin: auto;
+}

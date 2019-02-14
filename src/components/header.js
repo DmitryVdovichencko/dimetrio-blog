@@ -1,8 +1,8 @@
-import React from "react"
-import headerStyles from "./header.module.css"
+import React from "react";
+
 
 export default ({ children }) => (
-  <div className={headerStyles.header}>{children}
+  <div className="header">{children}
     <svg class="clip-svg">
 				<defs>
 					<clipPath id="polygon-clip-trapezoid" clipPathUnits="objectBoundingBox">

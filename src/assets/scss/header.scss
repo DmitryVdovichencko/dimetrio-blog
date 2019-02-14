@@ -1,6 +1,6 @@
 @font-face {
     font-family: "SecularOne";
-    src: url(./fonts/Lato-Light.ttf);
+    src: url(../fonts/Lato-Light.ttf);
   }
   .header a{
     text-decoration: none;
@@ -18,6 +18,7 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
+    padding:10px 20%;
     height: 300px;
     background-color: #5951B0;
     /* clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 0% 100%); */
@@ -26,9 +27,10 @@
     z-index: 0;
     
   }
-  .header h1{
+  .header a h1{
+   
       margin: 0px auto;
-      max-width: 1200px;
+      /* max-width: 1200px; */
       
       color:#0FE1CF; 
       
@@ -42,8 +44,9 @@ background: linear-gradient(to top, #0575E6, #00F260);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; */
-      
+      position: relative;
+      z-index: 5;
       font-family: 'SecularOne', sans-serif;
-      font-size:3em;
+      font-size:2em;
       
     }
