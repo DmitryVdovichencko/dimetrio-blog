@@ -1,12 +1,17 @@
-@font-face {
-    font-family: "SecularOne";
-    src: url(../fonts/Lato-Light.ttf);
-  }
+// @font-face {
+//     font-family: "SecularOne";
+//     src: url(../fonts/Lato-Light.ttf);
+//   }
+h1{
+  margin:0px;
+  padding:0px;
+}
   @import url('https://fonts.googleapis.com/css?family=Poppins:400,600');
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
   .header a{
     text-decoration: none;
       color:#0FE1CF; 
-      font-family: 'SecularOne', sans-serif;
+      // font-family: 'SecularOne', sans-serif;
       font-size: 1.5em;
       font-weight: bold;
       
@@ -28,11 +33,11 @@
     z-index: 0;
     
   }
-  .header a h1{
+  .nav__header{
    
-      margin: 0px auto;
+      // margin: 0px auto;
       /* max-width: 1200px; */
-      
+      margin-left:0px;
       color:#0FE1CF; 
 
       position: relative;
@@ -53,6 +58,8 @@
       width:0px;
       height:0px;
     }
-    .nav__links{
+    .nav__links {
       padding:5px 10px;
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-size: 0.1em;
     }
