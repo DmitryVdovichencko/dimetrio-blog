@@ -11,14 +11,25 @@ export default ()=> {
   return <div>
     <Layout>
     <Header>
+    
+   
+      <nav className='nav'>
       <Link to="/">
         <h1>Dmitry Vdovichenko</h1>
       </Link>
-   
-      <nav className='nav'>
-        <Link to="/about-css-modules/">
+      <div className='nav__menu'>
+       
+        <Link className="nav__links" to="/">
+          articles
+        </Link>
+        <Link className="nav__links" to="/">
+          projects
+        </Link>
+        <Link className="nav__links" to="/about-css-modules/">
           about
         </Link>
+        </div>
+     
       </nav>
 
       </Header>

@@ -2,6 +2,7 @@
     font-family: "SecularOne";
     src: url(../fonts/Lato-Light.ttf);
   }
+  @import url('https://fonts.googleapis.com/css?family=Poppins:400,600');
   .header a{
     text-decoration: none;
       color:#0FE1CF; 
@@ -18,7 +19,7 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
-    padding:10px 20%;
+    padding:10px 10% 10px 20%;
     height: 300px;
     background-color: #5951B0;
     /* clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 0% 100%); */
@@ -33,20 +34,25 @@
       /* max-width: 1200px; */
       
       color:#0FE1CF; 
-      
-    /* background: -webkit-linear-gradient(to top, #0575E6, #00F260);  
 
-background: linear-gradient(to top, #0575E6, #00F260);
-
-
-
-     
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; */
       position: relative;
       z-index: 5;
-      font-family: 'SecularOne', sans-serif;
+      font-family: 'Poppins', sans-serif;
+      font-weight:600;
       font-size:2em;
       
+    }
+    nav{
+      display: flex;
+      flex-flow: row nowrap;
+      width:100%;
+      justify-content:space-between;
+      align-items: center;
+    }
+    .clip-svg{
+      width:0px;
+      height:0px;
+    }
+    .nav__links{
+      padding:5px 10px;
     }
