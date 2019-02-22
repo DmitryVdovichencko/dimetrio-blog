@@ -2,8 +2,10 @@ import React from "react"
 
 import Layout from "../components/layout"
 import Header from "../components/header"
-import logo from "../assets/img/web-developer.svg" 
-
+import developer from "../assets/img/developer.svg" 
+import cat from "../assets/img/cat.svg" 
+import flower from "../assets/img/flower.svg" 
+import laptop from "../assets/img/laptop.svg" 
 
 
 export default ()=> {
@@ -18,7 +20,13 @@ export default ()=> {
 
       </Header>
       <div className='hero-image'>
-      <img src={logo} alt="Logo" />
+      <div className="dev">
+      <object type="image/svg+xml" className="dev__img" data={developer}>Your browser does not support SVGs</object>
+      <object type="image/svg+xml" className="dev__laptop" data={laptop}>Your browser does not support SVGs</object>
+      </div>
+     
+      <object type="image/svg+xml" className="cat-img" data={cat}>Your browser does not support SVGs</object>
+      <object type="image/svg+xml" className="flw-img"data={flower}>Your browser does not support SVGs</object>
       </div>
     </Layout>
   </div>
