@@ -28,6 +28,20 @@ body{
 .dev__img{
     height:200px;
 }
+.dev{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.dev__laptop{
+    fill: #5951B0;
+    margin: auto;
+    margin-bottom: 0px;
+}
+.dev__laptop:hover{
+    fill:#96fff4;
+}
 .cat-img{
     height:300px;
     align-self: flex-end;
