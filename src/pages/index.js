@@ -2,9 +2,8 @@ import React from "react"
 
 import Layout from "../components/layout"
 import Header from "../components/header"
-import developer from "../assets/img/developer.svg" 
-import cat from "../assets/img/cat.svg" 
-import flower from "../assets/img/flower.svg" 
+
+import Hero_image from "../components/hero_image";
 // import laptop from "../assets/img/laptop.svg" 
 
 
@@ -19,17 +18,7 @@ export default ()=> {
   
 
       </Header>
-      <div className='hero-image'>
-      <div className="dev">
-      <object type="image/svg+xml" className="dev__img" data={developer}>Your browser does not support SVGs</object>
-      <svg width="350" height="150" className="dev__laptop" >
-        <rect rx="20" ry="20" width="350" height="150" />
-        </svg> 
-      </div>
-     
-      <object type="image/svg+xml" className="cat-img" data={cat}>Your browser does not support SVGs</object>
-      <object type="image/svg+xml" className="flw-img"data={flower}>Your browser does not support SVGs</object>
-      </div>
+<Hero_image></Hero_image>
     </Layout>
   </div>
 

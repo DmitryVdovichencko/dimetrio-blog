@@ -11,46 +11,7 @@ body{
     justify-content: flex-start;
     
 }
-.hero-image{
-    display:flex;
-    width:100%;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    position: relative;
-    top:-100px;
-    left:10px;
-    z-index:3;
-    border-bottom: solid 5px #5951B0;
-   
-   
-}
-.dev__img{
-    height:200px;
-}
-.dev{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-end;
-    align-items: flex-start;
-}
-.dev__laptop{
-    fill: #5951B0;
-    margin: auto;
-    margin-bottom: 0px;
-}
-.dev__laptop:hover{
-    fill:#96fff4;
-}
-.cat-img{
-    height:300px;
-    align-self: flex-end;
-    margin-bottom: -60px;
-}
-.flw-img{
-    height:150px;
-    align-self: flex-end;
-}
+
 
 
 .articles{
