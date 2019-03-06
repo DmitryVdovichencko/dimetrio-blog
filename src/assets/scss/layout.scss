@@ -4,6 +4,7 @@ body{
     margin:0px;
     padding: 0px;
     background:url(../img/bg.png) repeat;
+    font-family: 'Roboto', sans-serif;
 }
 .layout{
     display: flex;
@@ -96,5 +97,41 @@ body{
             font-size:0.5em;
             font-weight: 400;
         }
+    }
+}
+
+.projects-section{
+    height: 500px;
+    width:100%;
+    background-color: #ff4081;
+    clip-path: url("#polygon-project-trapezoid");
+    position:relative;
+    
+
+}
+.projects{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: visible;
+    position: relative;
+    top:-550px;
+}
+.project{
+    width:300px;
+    background: white;
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 5px;
+    -webkit-box-shadow: 10px 10px 10px -7px rgba(0,0,0,0.65);
+    -moz-box-shadow: 10px 10px 10px -7px rgba(0,0,0,0.65);
+    box-shadow: 10px 10px 10px -7px rgba(0,0,0,0.65);
+    margin:20px;
+    padding: 5px;
+    .project__img{
+        width: 100px;
     }
 }
