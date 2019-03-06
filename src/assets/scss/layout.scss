@@ -120,6 +120,8 @@ body{
 }
 .project{
     width:300px;
+    min-height: 400px;
+    box-sizing: border-box;
     background: white;
     display: flex;
     flex-flow:column nowrap;
@@ -130,8 +132,23 @@ body{
     -moz-box-shadow: 10px 10px 10px -7px rgba(0,0,0,0.65);
     box-shadow: 10px 10px 10px -7px rgba(0,0,0,0.65);
     margin:20px;
-    padding: 5px;
+    *{
+        padding:5px;
+        margin:auto;
+        margin-left: 0px;
+    }
     .project__img{
         width: 100px;
+    }
+    h1{
+        color:white;
+        background: #5951B0;
+        background:linear-gradient(-45deg, transparent 35px,#5951B0 0);
+        font-weight: normal;
+        padding: 10px 60px 10px 10px;
+        margin-bottom: 15px;
+        margin-top: 0px;
+        border-radius: 5px 0px 0px 0px;
+
     }
 }
