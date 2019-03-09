@@ -11,9 +11,9 @@ const Project = ({
     publishedDate,
     logo,
   }) => (
-    <div className="project">
+    <div className="project preview-box">
         <h1>{name}</h1>
-        <img className="project__img" src={logo.image.src} alt={logo.title} />
+        <img className="project__img preview-box__img" src={logo.image.src} alt={logo.title} />
         <p className="project__type">{type}</p>
         <p className="project__descr">{description}</p>
         <p className="project__date">{publishedDate}</p>

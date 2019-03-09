@@ -104,10 +104,33 @@ body{
     height: 500px;
     width:100%;
     background-color: #ff4081;
-    clip-path: url("#polygon-project-trapezoid");
-    position:relative;
+    clip-path: url("#polygon-project");
+    
+    margin:auto;
+    margin-top:200px;
+    
     
 
+}
+.posts-section{
+    height: 500px;
+    width:100%;
+    margin:auto;
+    margin-top: 10px;
+    background-color: gray;
+    clip-path: url("#polygon-post");
+   
+    
+
+}
+.posts{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: visible;
+    position: relative;
+    top:-600px;
 }
 .projects{
     display: flex;
@@ -118,7 +141,7 @@ body{
     position: relative;
     top:-550px;
 }
-.project{
+.preview-box{
     width:300px;
     min-height: 400px;
     box-sizing: border-box;
@@ -137,8 +160,13 @@ body{
         margin:auto;
         margin-left: 0px;
     }
-    .project__img{
-        width: 100px;
+    .preview-box__img{
+        height: 100px;
+    }
+    .post__img{
+        width:100%;
+        height: auto;
+        padding:5px 0px;
     }
     h1{
         color:white;
