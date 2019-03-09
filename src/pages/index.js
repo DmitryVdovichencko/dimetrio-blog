@@ -21,23 +21,9 @@ export default ()=> {
 
       </Header>
       <Hero_image></Hero_image>
-      <div className="projects-section">
-      <svg className="clip-svg">
-				<defs>
-					<clipPath id="polygon-project" clipPathUnits="objectBoundingBox">
-						<polygon points="0 1, 0 0, 1 0.2, 1 0.8" />
-					</clipPath>
-				</defs>
-		    </svg></div>
+
       <Projects></Projects>
-      <div className="posts-section">
-      <svg className="clip-svg">
-				<defs>
-          <clipPath id="polygon-post" clipPathUnits="objectBoundingBox">
-						<polygon points="0 0.8, 0 0, 1 0.2, 1 1" />
-					</clipPath>
-				</defs>
-		    </svg></div>
+  
       <Posts></Posts>
       
     </Layout>

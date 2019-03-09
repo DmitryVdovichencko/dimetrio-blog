@@ -10,10 +10,30 @@ body{
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
+    position: absolute;
+    left: 0;
+    top:0;
     
 }
 
-
+.background{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: -1;
+    width:100%;
+}
+.header-section{
+    height: 300px;
+    width:100%;
+    background-color: #5951B0;
+    /* clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 0% 100%); */
+    clip-path: url("#polygon-clip-trapezoid");
+    margin:0px auto 200px auto;
+}
 
 .articles{
     font-family: 'Roboto', sans-serif;
@@ -106,8 +126,8 @@ body{
     background-color: #ff4081;
     clip-path: url("#polygon-project");
     
-    margin:auto;
-    margin-top:200px;
+    margin:150px auto;
+    
     
     
 
@@ -115,10 +135,11 @@ body{
 .posts-section{
     height: 500px;
     width:100%;
-    margin:auto;
-    margin-top: 10px;
+    margin:150px auto;
+    
     background-color: gray;
     clip-path: url("#polygon-post");
+    
    
     
 
@@ -130,7 +151,8 @@ body{
     align-items: flex-start;
     overflow: visible;
     position: relative;
-    top:-600px;
+    margin: 150px auto;
+    
 }
 .projects{
     display: flex;
@@ -139,7 +161,8 @@ body{
     align-items: flex-start;
     overflow: visible;
     position: relative;
-    top:-550px;
+    margin:0px auto 150px auto;
+   
 }
 .preview-box{
     width:300px;
