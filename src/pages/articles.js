@@ -16,23 +16,3 @@ export default ({ data }) => {
     )
 
     }
-export const query = graphql`
-query {
-    allMarkdownRemark {
-      totalCount
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            
-          }
-          fields {            
-              slug          
-            }
-          excerpt
-        }
-      }
-    }
-  }
-`

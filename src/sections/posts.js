@@ -1,5 +1,5 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+import { StaticQuery, graphql,Link } from 'gatsby';
 
 const dateFormat=(dateStr)=>{
   const userDate= new Date(Date.parse(dateStr)),
@@ -17,15 +17,18 @@ const Post= ({
     caption,
     publishedDate,
     image,
+    fields,
     article
   
   }) => (
+    <Link to={fields.slug}>
     <div className="post preview-box">
         <h1>{caption}</h1>
         <img className="post__img" src={image.file.url} alt={image.title} />
         <p className="post__date">Published at {dateFormat(publishedDate)}</p>
         <article className="post__content">{article.childMarkdownRemark.excerpt}</article>
     </div>
+    </Link>
   );
   const Posts = () => (
       
@@ -43,6 +46,9 @@ const Post= ({
               url
             }
           },
+          fields{
+            slug
+          }
           article{
             childMarkdownRemark{
               excerpt

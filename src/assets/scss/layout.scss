@@ -6,11 +6,20 @@ body{
     background:url(../img/bg.png) repeat;
     font-family: 'Roboto', sans-serif;
 }
+a{
+    color:black;
+    text-decoration: none;
+
+}
+a:visited{
+    color:inherit;
+}
 .layout{
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     position: absolute;
+    width:100%;
     left: 0;
     top:0;
     
@@ -133,7 +142,7 @@ body{
 
 }
 .posts-section{
-    height: 500px;
+    height: 600px;
     width:100%;
     margin:150px auto;
     

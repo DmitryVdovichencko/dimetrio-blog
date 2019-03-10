@@ -3,28 +3,35 @@ import Layout from "../components/layout"
 import Header from "../components/header"
 import { graphql } from "gatsby"
 
-export default ({data}) => {
-    const post = data.markdownRemark
+export default ({ data }) => {  
+  const post = data.contentfulPost, img = data.contentfulPost.image.file.url
   return (
-    <Layout>
-    <Header></Header>
-    <div className="articles">
-        <h1>{post.frontmatter.title}</h1>        
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-     </div>
-    
-    </Layout>
-  )
+  <div>
+     <Header></Header>
+    <div>        
+      <h1>{post.caption}</h1>
+      <img src= {img} ></img>        
+      <div dangerouslySetInnerHTML={{ __html: post.article.childMarkdownRemark.html }} />      
+    </div>    
+    </div>
+)
 }
 
 export const query = graphql`  
-    query($slug: String!) {    
-        markdownRemark(
-            fields: { slug: { eq: $slug } }) { 
-                 html      
-                 frontmatter {        
-                     title      
-                    }    
-                }  
-            }
-    `
+  query($slug: String!) {    
+    contentfulPost(fields: { slug: { eq: $slug } }) {
+      caption
+      image{
+        file{
+          url
+        }
+      }      
+      article{
+        childMarkdownRemark{
+          html
+        }
+      }   
+    }  
+  }
+  `
+
