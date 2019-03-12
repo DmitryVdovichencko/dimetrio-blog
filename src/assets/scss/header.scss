@@ -6,7 +6,7 @@ h1{
   margin:0px;
   padding:0px;
 }
-  @import url('https://fonts.googleapis.com/css?family=Poppins:400,600');
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,400');
   @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
   .header a{
     text-decoration: none;
@@ -42,8 +42,8 @@ h1{
 
       position: relative;
       z-index: 5;
-      font-family: 'Poppins', sans-serif;
-      font-weight:600;
+      font-family: 'Nunito', sans-serif;
+      font-weight: normal;
       font-size:2em;
       
     }
@@ -59,7 +59,9 @@ h1{
       height:0px;
     }
     .nav__links {
+      border-bottom: #0FE1CF solid 1px;
       padding:5px 10px;
-      font-family: 'Open Sans Condensed', sans-serif;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 200;
       font-size: 0.1em;
     }

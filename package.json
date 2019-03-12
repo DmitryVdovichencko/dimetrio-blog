@@ -20,7 +20,8 @@
     "gatsby-transformer-remark": "^2.2.5",
     "node-sass": "^4.11.0",
     "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react-dom": "^16.8.0",
+    "react-icons": "^3.5.0"
   },
   "repository": {
     "type": "git",

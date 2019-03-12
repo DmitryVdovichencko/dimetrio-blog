@@ -1,4 +1,50 @@
-
+//function for removing the unit of value
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+  }
+  /* mixin for calculate font size based on
+  1. minimal width ($min-vw)
+  2. maximal width ($max-vw)
+  3. minimal font-size ($min-font-size)
+  4. maximal font-size ($max-font-size)
+  */
+  @mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+    //check units of mixin's parameters 
+    $u1: unit($min-vw);
+    $u2: unit($max-vw);
+    $u3: unit($min-font-size);
+    $u4: unit($max-font-size);
+  //check out that units for parameter's values are the same
+    @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+      //linking for parent selector
+      & {
+        //font-size set to min value 
+        font-size: $min-font-size;
+        // for screens between min and max width
+        // calculating font-size
+        // add calc for formula 
+        // calculate difference between max & min font size 
+        // scaling font size to width of our container
+        font-size: $min-font-size;
+        @media screen and (min-width: $min-vw) {
+          font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+        }
+  
+        @media screen and (min-width: $max-vw) {
+          font-size: $max-font-size;
+        }
+      }
+    }
+  }
+  
+  $min_width: 320px;
+  $max_width: 1920px;
+  $min_font: 10px;
+  $max_font: 16px;
+  
+  html {
+    @include fluid-type($min_width, $max_width, $min_font, $max_font);
+  }
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 body{
     margin:0px;
