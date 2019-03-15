@@ -1,0 +1,57 @@
+h1{
+    margin:0px;
+    padding:0px;
+  }
+  @import url('https://fonts.googleapis.com/css?family=Nunito:200,400');
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+    .header a{
+      text-decoration: none;
+        color:#0FE1CF; 
+        
+        font-size: 1.5em;
+        font-weight: bold;
+        
+    }
+    .header a:visited{
+      color:#0FE1CF; 
+    }
+    .header{
+      display:flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding:10px 10% 10px 20%;
+      
+      background-color: #5951B0;
+
+     
+      
+    }
+    .nav__header{
+     
+      
+        margin-left:0px;
+        color:#0FE1CF; 
+  
+        position: relative;
+        z-index: 5;
+        font-family: 'Nunito', sans-serif;
+        font-weight: normal;
+        font-size:2em;
+        
+      }
+      nav{
+        display: flex;
+        flex-flow: row nowrap;
+        width:100%;
+        justify-content:space-between;
+        align-items: center;
+      }
+  
+      .nav__links {
+        border-bottom: #0FE1CF solid 1px;
+        padding:5px 10px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 200;
+        font-size: 0.1em;
+      }

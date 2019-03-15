@@ -74,3 +74,4 @@ const Post= ({
   );
   
   export default Posts;
+  export {dateFormat};

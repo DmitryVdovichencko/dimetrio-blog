@@ -1,7 +1,8 @@
 import React from "react"
+import styles from "./background.module.scss"
 export default () => (
-<div className="background">
-<div className="header-section">
+<div className={styles.background}>
+<div className={styles.header__section}>
     <svg className="clip-svg">
 				<defs>
 					<clipPath id="polygon-clip-trapezoid" clipPathUnits="objectBoundingBox">
@@ -10,7 +11,7 @@ export default () => (
 				</defs>
 		</svg>
     </div>
-    <div className="projects-section">
+    <div className= {styles.projects__section}>
       <svg className="clip-svg">
 				<defs>
 					<clipPath id="polygon-project" clipPathUnits="objectBoundingBox">
@@ -20,7 +21,7 @@ export default () => (
 		    </svg>
             
     </div>
-    <div className="posts-section">
+    <div className={styles.posts__section}>
       <svg className="clip-svg">
 				<defs>
           <clipPath id="polygon-post" clipPathUnits="objectBoundingBox">

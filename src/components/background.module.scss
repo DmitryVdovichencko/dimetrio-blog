@@ -1,0 +1,44 @@
+.background{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: -1;
+    width:100%;
+    background:url(../assets/img/bg.png) repeat;
+}
+.header__section{
+    height: 300px;
+    width:100%;
+    background-color: #5951B0;
+    /* clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 0% 100%); */
+    clip-path: url("#polygon-clip-trapezoid");
+    margin:0px auto 200px auto;
+}
+
+.projects__section{
+    height: 500px;
+    width:100%;
+    background-color: #ff4081;
+    clip-path: url("#polygon-project");
+    
+    margin:150px auto;
+    
+    
+    
+
+}
+.posts__section{
+    height: 600px;
+    width:100%;
+    margin:150px auto;
+    
+    background-color: gray;
+    clip-path: url("#polygon-post");
+    
+   
+    
+
+}

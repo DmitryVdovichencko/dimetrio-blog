@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,700');
+
+.post{
+    font-family: 'Roboto', sans-serif;
+    font-size:1.2em;
+    color:#333;
+    display:flex;
+    flex-flow:column nowrap;
+    font-weight: 300;
+    article{
+        padding:10px 10% 10px 20%;
+    }
+    
+}
+.post__header{
+    font-weight: 700;
+    font-size:2em;
+}
+
+.post__img{
+    width: 100vw;
+   
+    height: 60vh;
+    object-fit: cover;
+}
+.post__date{
+    background:#333;
+    color:white;
+    margin:10px auto 10px 0px;
+    padding:10px;
+    border-radius:5px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: max-content;
+}

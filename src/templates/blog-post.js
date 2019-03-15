@@ -1,19 +1,24 @@
 import React from "react"
-import Layout from "../components/layout"
+import Post from "../components/post"
 import Header from "../components/header"
 import { graphql } from "gatsby"
-
+import { dateFormat } from "../sections/posts"
 export default ({ data }) => {  
-  const post = data.contentfulPost, img = data.contentfulPost.image.file.url
+  const post = data.contentfulPost, img = data.contentfulPost.image.file.url, content= post.article.childMarkdownRemark.html;
+  
   return (
   <div>
      <Header></Header>
-    <div>        
-      <h1>{post.caption}</h1>
-      <img src= {img} ></img>        
-      <div dangerouslySetInnerHTML={{ __html: post.article.childMarkdownRemark.html }} />      
-    </div>    
-    </div>
+      <Post
+      img={img}
+      date={dateFormat(post.publishedDate)}
+      caption={post.caption}
+      html={{__html: content }}
+      />
+  </div>        
+      
+   
+    
 )
 }
 
@@ -25,7 +30,8 @@ export const query = graphql`
         file{
           url
         }
-      }      
+      }
+      publishedDate      
       article{
         childMarkdownRemark{
           html

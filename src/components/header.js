@@ -1,24 +1,24 @@
 import React from "react";
-
 import { Link } from "gatsby"
+import styles from "./header.module.scss"
 export default () => (
-	<div className="header">
+	<div className={styles.header}>
 		
     
    
-		<nav className='nav'>
-		<Link className="nav__header" to="/">
+		<nav className={styles.nav}>
+		<Link className={styles.nav__header} to="/">
 			<h1>Dmitry Vdovichenko</h1>
 		</Link>
-		<div className='nav__menu'>
+		<div className={styles.nav__menu}>
 		 
-			<Link className="nav__links" to="/articles/">
+			<Link className={styles.nav__links} to="/articles/">
 				articles
 			</Link>
-			<Link className="nav__links" to="/">
+			<Link className={styles.nav__links} to="/">
 				projects
 			</Link>
-			<Link className="nav__links" to="/about-css-modules/">
+			<Link className={styles.nav__links} to="/about-css-modules/">
 				about
 			</Link>
 			</div>
