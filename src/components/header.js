@@ -18,7 +18,7 @@ export default () => (
 			<Link className={styles.nav__links} to="/">
 				projects
 			</Link>
-			<Link className={styles.nav__links} to="/about-css-modules/">
+			<Link className={styles.nav__links} to="/about/">
 				about
 			</Link>
 			</div>
