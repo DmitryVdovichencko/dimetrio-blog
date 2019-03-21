@@ -1,11 +1,11 @@
 import React from "react"
 import Header from "../components/header"
-import CV from "../components/cv"
+import Skills from "../components/skill"
 
 
 export default () => (
   <div>
   <Header></Header>
-  <CV></CV>
+  <Skills></Skills>
   </div>
 )
