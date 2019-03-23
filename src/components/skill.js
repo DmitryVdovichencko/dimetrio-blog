@@ -23,8 +23,16 @@ const Skill= ({
             <p className="skill__learning" dangerouslySetInnerHTML={{__html: description.childMarkdownRemark.html }}></p>
             <p className="skill__projects">
             
-                <h3>{projects[0].name}</h3>
-                <a href={projects[0].projectUrl}>{projects[0].projectUrl}</a>
+               
+                {projects.map((p, i) => (
+           <div className="projects">
+            <h3>{p.name}</h3>
+              <a href={p.projectUrl}>{p.projectUrl}</a>
+           </div>
+          
+        )
+        )}
+                
                 
             
             </p>
