@@ -1,8 +1,8 @@
 import React from "react"
 import Header from "../components/header"
 import Skills from "../components/skill"
-import { graphql, Link } from "gatsby"
-let lang="ru";
+import { graphql, Link} from "gatsby"
+
 const Skill= ({
   name,
   img,
@@ -50,7 +50,7 @@ export default ({ data }) => {
   return (
   <div>
    <Header></Header>
-   <Link to="/about-ru/">ru</Link>
+   <Link to="/about/">en</Link>
     <p>{about.node.name}</p>
     <section className="skills">
         {about.node.skills.map((p, i) => (
@@ -71,7 +71,7 @@ export default ({ data }) => {
 export const query = graphql` 
 query{
 
-  allContentfulAbout(filter: { node_locale: { eq: "en-US"} }) {
+  allContentfulAbout(filter: { node_locale: { eq: "ru"} }) {
      edges{
        node{
          name,

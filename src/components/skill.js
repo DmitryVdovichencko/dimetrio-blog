@@ -41,13 +41,20 @@ const Skill= ({
     </div>
     
   );
-  const Skills = () => (
-      
+  const Skills = () => 
+    
+    
+    
+    
+    (    
     <StaticQuery
+    const lang="ru"
     query={graphql`
-      query SkillsQuery {
+      query SkillsQuery{
 
-        contentfulAbout{
+       allContentfulAbout(filter: { node_locale: { eq: "ru" } }) {
+          edges{
+            node{
          skills{
               name
                 img{
@@ -72,12 +79,15 @@ const Skill= ({
             }
           }
         }
+      }
+    }
+        
       
         
     `}
-    render={({ contentfulAbout }) => (
+    render={data => (
       <section className="skills">
-        {contentfulAbout.skills.map((p, i) => (
+        {data.allContentfulAbout.edges[0].node.skills.map((p, i) => (
            <Skill {...p} />
           
         )
@@ -86,6 +96,6 @@ const Skill= ({
       </section>
     )}
     />
-  );
+  ) ;
   
   export default Skills;

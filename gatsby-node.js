@@ -2,11 +2,7 @@ const path = require(`path`);
   const createFilePath=(caption) => String(caption).toLowerCase().replace( / /g, "-" );
   
 
-//   exports.onCreateNode = ({ node }) => {
-//     if (node.internal.type === `ContentfulPost`) {
-//       console.log(createFilePath(node.caption));
-//     }
-//   }
+
 
   exports.onCreateNode = ({ node, actions }) => {
     const { createNodeField } = actions
