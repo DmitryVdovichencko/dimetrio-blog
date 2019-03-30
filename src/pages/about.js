@@ -1,47 +1,10 @@
 import React from "react"
 import Header from "../components/header"
-import Skills from "../components/skill"
+import Skill from "../components/skill"
+import Project from "../components/project"
 import { graphql, Link } from "gatsby"
-let lang="ru";
-const Skill= ({
-  name,
-  img,
-  description,
-  projects
 
-  
 
-}) => (
-  
-  <div className="skill">
-      <div className="skill__header">
-        
-          <h2 className="skill__name">{name}</h2>
-          <img src={img.file.url}></img>
-      </div>
-      <section className="skill__description">
-   
-          <p className="skill__learning" dangerouslySetInnerHTML={{__html: description.childMarkdownRemark.html }}></p>
-          <p className="skill__projects">
-          
-             
-              {projects.map((p, i) => (
-         <div className="projects">
-          <h3>{p.name}</h3>
-            <a href={p.projectUrl}>{p.projectUrl}</a>
-         </div>
-        
-      )
-      )}
-              
-              
-          
-          </p>
-      </section>
-   
-  </div>
-  
-);
 
 export default ({ data }) => {  
  const about=data.allContentfulAbout.edges[0];
@@ -60,6 +23,13 @@ export default ({ data }) => {
         )}
     
       </section>
+      <section className="projects">
+        {about.node.projects.map((p, i) => (
+           <Project key={p.id} {...p} cv={true} />
+          
+        ))}
+    
+      </section>
     
   </div>        
       
@@ -75,6 +45,16 @@ query{
      edges{
        node{
          name,
+         projects{
+          name
+          description{
+            childMarkdownRemark{
+              html
+            }
+          }
+          repositoryUrl
+          projectUrl
+        },
     skills{
          name
            img{
@@ -89,11 +69,7 @@ query{
              html
            }
          }
-         projects{
-           name
-           projectUrl
-           repositoryUrl
-         }
+    
      
        
        }
