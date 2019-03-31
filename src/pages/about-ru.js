@@ -2,7 +2,8 @@ import React from "react"
 import Header from "../components/header"
 import Skill from "../components/skill"
 import Project from "../components/project"
-import { graphql, Link} from "gatsby"
+import CV from "../components/cv"
+import { graphql} from "gatsby"
 
 
 
@@ -13,23 +14,19 @@ export default ({ data }) => {
   return (
   <div>
    <Header></Header>
-   <Link to="/about/">en</Link>
-    <p>{about.node.name}</p>
-    <section className="skills">
-        {about.node.skills.map((p, i) => (
+   <CV 
+        name={about.node.name} 
+        skills=  {about.node.skills.map((p, i) => (
            <Skill {...p} />
           
         )
         )}
-    
-      </section>
-      <section className="projects">
-        {about.node.projects.map((p, i) => (
-           <Project key={p.id} {...p} cv={true} />
-          
-        ))}
-    
-      </section>
+        projects =  {about.node.projects.map((p, i) => (
+          <Project key={p.id} {...p} cv={true} />
+         
+       ))}
+       otherlang="en">
+  </CV>
     
   </div>        
       
@@ -45,6 +42,16 @@ query{
      edges{
        node{
          name,
+         projects{
+          name
+          description{
+            childMarkdownRemark{
+              html
+            }
+          }
+          repositoryUrl
+          projectUrl
+        },
     skills{
          name
            img{
@@ -59,11 +66,7 @@ query{
              html
            }
          }
-         projects{
-           name
-           projectUrl
-           repositoryUrl
-         }
+       
      
        
        }
