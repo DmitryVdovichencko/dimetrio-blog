@@ -1,6 +1,8 @@
 import React from 'react';
 import { StaticQuery, graphql,Link } from 'gatsby';
 
+import PreviewPost from '../components/previewPost';
+
 const dateFormat=(dateStr)=>{
   const userDate= new Date(Date.parse(dateStr)),
   options = {
@@ -21,14 +23,22 @@ const Post= ({
     article
   
   }) => (
+   
+
     <Link to={fields.slug}>
-    <div className="post preview-box">
-        <h1>{caption}</h1>
-        <img className="post__img" src={image.file.url} alt={image.title} />
-        <p className="post__date">Published at {dateFormat(publishedDate)}</p>
-        <article className="post__content">{article.childMarkdownRemark.excerpt}</article>
-    </div>
+ 
+    <PreviewPost
+    name={caption}
+    img_src={image.file.url}
+    img_title={image.title}
+    publishedDate={`Published at ${dateFormat(publishedDate)}`}
+    content={{__html: article.childMarkdownRemark.excerpt }}
+    
+    >
+
+    </PreviewPost>
     </Link>
+   
   );
   const Posts = () => (
       

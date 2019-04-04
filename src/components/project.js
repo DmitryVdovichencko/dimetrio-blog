@@ -1,5 +1,7 @@
 import React from 'react';
 
+import PreviewProject from './previewProject';
+
 const Project = ({
     name,
     description,
@@ -14,19 +16,19 @@ const Project = ({
   const content = description.childMarkdownRemark.html;
   if(preview){
     return(
+   
     
-        <div className="project preview-box">
-        
-            <h1>{name}</h1>
-            <img className="project__img preview-box__img" src={logo.image.src} alt={logo.title} />
-            <p className="project__type">{type}</p>
-            <p className="project__descr" dangerouslySetInnerHTML={{__html: content }}></p>
-            <p className="project__date">{publishedDate}</p>
-            <a className="project__url" href={projectUrl}> {name}</a>
-            <a className="project__repo" href={repositoryUrl}>{name} github repository</a>
-    
-    
-        </div>
+        <PreviewProject
+        name={name}
+        img_src={logo.image.src}
+        img_title={logo.title}
+        type={type}
+        content={{__html: content }}
+        publishedDate={publishedDate}
+        projectUrl={projectUrl}
+        repositoryUrl={repositoryUrl}
+        ></PreviewProject>
+       
       );
   }
   if(cv){
