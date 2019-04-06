@@ -1,7 +1,7 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Project from "../components/project"
-
+import styles from "./section.module.scss"
 const Projects = () => (
       
     <StaticQuery
@@ -30,7 +30,7 @@ const Projects = () => (
       }
     `}
     render={({ contentfulAbout }) => (
-      <section className="projects">
+      <section className={styles.previews}>
         {contentfulAbout.projects.map((p, i) => (
            <Project key={p.id} {...p} preview={true} />
           

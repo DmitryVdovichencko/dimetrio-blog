@@ -1,6 +1,6 @@
 import React from 'react';
 import { StaticQuery, graphql,Link } from 'gatsby';
-
+import styles from "./section.module.scss"
 import PreviewPost from '../components/previewPost';
 
 const dateFormat=(dateStr)=>{
@@ -72,7 +72,7 @@ const Post= ({
       }
     `}
     render={({ contentfulAbout }) => (
-      <section className="posts">
+      <section className={styles.previews}>
         {contentfulAbout.posts.map((p, i) => (
            <Post {...p} />
           

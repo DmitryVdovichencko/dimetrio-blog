@@ -8,10 +8,11 @@ const PreviewPost = props => (
    <h1 className={styles.preview__header}>{props.name}</h1>
 
             <img className={styles.preview__postImg} src={props.img_src} alt={props.img_title} />
-            <p className={styles.preview__type}>{props.type}</p>
-            <p className={styles.preview__date} >{props.publishedDate}</p>
-            <p className={styles.preview__content} dangerouslySetInnerHTML={props.content}></p>
-   
+            <div className={styles.preview__content}>
+              <p className={styles.preview__type}>{props.type}</p>
+              <p className={styles.preview__date} >{props.publishedDate}</p>
+              <p className={styles.preview__excerpt} dangerouslySetInnerHTML={props.content}></p>
+            </div>
 
     
     </div>

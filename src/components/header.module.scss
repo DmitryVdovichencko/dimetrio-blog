@@ -55,3 +55,29 @@ h1{
         font-weight: 200;
         font-size: 0.1em;
       }
+
+      .nav__menu_toggle   {
+        // display: none;
+        .nav__bar{
+        cursor: pointer;
+        border-radius: 1px;
+        height: 5px;
+        width: 35px;
+        background: #0FE1CF;
+        margin: 6px 0;
+        display: block;}
+      }
+      .nav__menu_toggle_close{
+        .nav__bar:first-child{
+          -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+          transform: rotate(-45deg) translate(-9px, 6px);
+        }
+        .nav__bar:nth-child(2){
+          opacity:0;
+        }
+        .nav__bar:last-child{
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+        }
+      }
+
