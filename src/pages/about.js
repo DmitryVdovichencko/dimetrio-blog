@@ -3,7 +3,7 @@ import Header from "../components/header"
 import Skill from "../components/skill"
 import Project from "../components/project"
 import CV from "../components/cv"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 
 
 

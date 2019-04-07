@@ -16,7 +16,7 @@ const Skill= ({
       <div className="skill__header">
         
           <h2 className="skill__name">{name}</h2>
-          <img src={img.file.url}></img>
+          <img src={img.file.url} alt="icon"></img>
       </div>
       <section className="skill__description">
    

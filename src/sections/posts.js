@@ -18,7 +18,7 @@ const dateFormat=(dateStr)=>{
 const Post= ({
     caption,
     publishedDate,
-    image,
+    prevImage,
     fields,
     article
   
@@ -29,8 +29,8 @@ const Post= ({
  
     <PreviewPost
     name={caption}
-    img_src={image.file.url}
-    img_title={image.title}
+    img_src={prevImage.file.url}
+    img_title={prevImage.title}
     publishedDate={`Published at ${dateFormat(publishedDate)}`}
     content={{__html: article.childMarkdownRemark.excerpt }}
     
@@ -50,7 +50,7 @@ const Post= ({
           posts{
           caption,
           publishedDate,
-          image{
+          prevImage{
             title
             file{
               url

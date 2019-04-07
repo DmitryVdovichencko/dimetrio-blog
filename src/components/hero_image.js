@@ -11,24 +11,24 @@ export default () => (
   <svg width="100%" height="200" className="dev__laptop" viewBox="0 0 95% 180" >
     <rect x="10" y="10"rx="20" ry="20" width="90%" height="170" />
     <linearGradient id="linear-gradient">
-    <stop offset="0%" stop-color="#360033"/>
-    <stop offset="100%" stop-color="#0b8793"/>
+    <stop offset="0%" stopColor="#360033"/>
+    <stop offset="100%" stopColor="#0b8793"/>
   </linearGradient>
 
-   <text x="55" y="90" class="main"> 
+   <text x="55" y="90" className="main"> 
    {String.fromCharCode(60)} 
    {String.fromCharCode(47)}
    {String.fromCharCode(62)}
    </text>
-   <text x="100" y="80"class="main">front-end</text>
-   <text x="100" y="100"class="main">developer</text>
-   <text x="55" y="90" class="main-1">
+   <text x="100" y="80"className="main">front-end</text>
+   <text x="100" y="100"className="main">developer</text>
+   <text x="55" y="90" className="main-1">
    {String.fromCharCode(60)} 
    {String.fromCharCode(47)}
    {String.fromCharCode(62)}   
    </text>
-   <text x="100" y="80"class="main-1 first">front-end</text>
-   <text x="100" y="100"class="main-1">developer</text>
+   <text x="100" y="80"className="main-1 first">front-end</text>
+   <text x="100" y="100"className="main-1">developer</text>
     </svg> 
   </div>
  

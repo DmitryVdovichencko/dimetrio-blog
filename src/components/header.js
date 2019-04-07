@@ -2,16 +2,15 @@ import React from "react";
 import { Link } from "gatsby"
 import styles from "./header.module.scss"
 
-function handleClick() {
-	
-	const menuElement=document.querySelector(`.${styles.nav__menu_toggle}`);
+function handleClick(event) {
 
-	menuElement.onclick = function(event){
-  	menuElement.classList.toggle(styles.nav__menu_toggle_close);
+
+	// menuElement.onclick = function(event){
+		event.currentTarget.classList.toggle(styles.nav__menu_toggle_close);
   
-	}
+	// }
 }
-handleClick();
+
 export default () => (
 	<div className={styles.header}>
 		
@@ -33,7 +32,7 @@ export default () => (
 				about
 			</Link>
 			</div>
-			<div className={styles.nav__menu_toggle} >
+			<div className={styles.nav__menu_toggle} onClick={handleClick}>
 				<div className={styles.nav__bar}></div>
        			<div className={styles.nav__bar}></div>
        			<div className={styles.nav__bar}></div>
