@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import styles from "./cv.module.scss"
 
     const CV = ({
         name,
@@ -14,9 +14,11 @@ import { Link } from "gatsby"
         if (otherlang === 'en'){
           return(
         
-            <div className="cv">
-                <h1 className="cv__name">{name}</h1>
-                <Link to={"/about/"}>{otherlang}</Link>
+            <div className={styles.cv}>
+                <div className={styles.cv__header}>
+                    <h1 className={styles.cv__name}>{name}</h1>
+                    <Link className={styles.cv__lang} to={"/about/"}>{otherlang}</Link>
+                </div>
                 <section className="cv__skill">{skills}</section>
                 <section className="cv__skill">{projects}</section>
                 
@@ -26,9 +28,11 @@ import { Link } from "gatsby"
         }else{
         return(
         
-        <div className="cv">
-            <h1 className="cv__name">{name}</h1>
-            <Link to={`/about-${otherlang}/`}>{otherlang}</Link>
+        <div className={styles.cv}>
+        <div className={styles.cv__header}>
+            <h1 className={styles.cv__name}>{name}</h1>
+            <Link className={styles.cv__lang} to={`/about-${otherlang}/`}>{otherlang}</Link>
+        </div>
             <section className="cv__skill">{skills}</section>
             <section className="cv__skill">{projects}</section>
             

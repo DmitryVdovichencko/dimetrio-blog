@@ -1,0 +1,22 @@
+.cv{
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    color:#333333;
+    display: flex;
+    flex-flow:column nowrap;
+    margin:auto;
+    width:60%;
+    min-width: 300px;
+    margin: 20px auto;
+}
+
+.cv__header {
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+   .cv__lang{
+       background-color: rgb(89,81,176);
+       padding:5px;
+       color:white;
+   }
+}

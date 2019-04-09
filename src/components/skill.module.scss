@@ -1,0 +1,14 @@
+.skill__header{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.skill__img{
+    height:32px;
+    width: auto;
+}
+.skill__name{
+    padding:0px 5px;
+}
