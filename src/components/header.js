@@ -5,10 +5,11 @@ import styles from "./header.module.scss"
 function handleClick(event) {
 
 
-	// menuElement.onclick = function(event){
+	
 		event.currentTarget.classList.toggle(styles.nav__menu_toggle_close);
-  
-	// }
+		event.currentTarget.parentElement.classList.toggle(styles.nav__menu_mobile)
+		
+	
 }
 
 export default () => (

@@ -67,6 +67,9 @@ h1{
         margin: 6px 0;
         display: block;}
       }
+      .nav__menu_mobile{
+        background-color:red;
+      }
       .nav__menu_toggle_close{
         .nav__bar:first-child{
           -webkit-transform: rotate(-45deg) translate(-9px, 6px);
