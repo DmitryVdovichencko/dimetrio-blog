@@ -77,11 +77,19 @@ h1{
         height:100vh;
         display:flex;
         flex-flow:column nowrap;
+        justify-content:center;
         background-color: #5951B0;
         border:solid 2px #0FE1CF;
+        box-sizing: border-box;
           a{
         display: block;
+        
    
+        }
+        .nav__menu_toggle_close{
+          position:absolute;
+          top:10px;
+          right:10%;
         }
       }
       .nav__menu_toggle_close{
@@ -98,3 +106,6 @@ h1{
         }
       }
 
+@media (max-width: 768px) {
+  
+}
