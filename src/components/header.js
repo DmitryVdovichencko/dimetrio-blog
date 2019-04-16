@@ -7,7 +7,11 @@ function handleClick(event) {
 
 	
 		event.currentTarget.classList.toggle(styles.nav__menu_toggle_close);
-		event.currentTarget.parentElement.classList.toggle(styles.nav__menu_mobile)
+		event.currentTarget.parentElement.classList.toggle(styles.nav__menu_mobile);
+
+		document.body.style.maxHeight = (document.body.style.maxHeight!=="100vh") ? "100vh" : "none";
+		document.body.style.overflow = (document.body.style.overflow!=="hidden") ? "hidden": "visible";
+		
 		
 	
 }

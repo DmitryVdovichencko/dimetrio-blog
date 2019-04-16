@@ -68,7 +68,21 @@ h1{
         display: block;}
       }
       .nav__menu_mobile{
-        background-color:red;
+        
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index:1;
+        width:100%;
+        height:100vh;
+        display:flex;
+        flex-flow:column nowrap;
+        background-color: #5951B0;
+        border:solid 2px #0FE1CF;
+          a{
+        display: block;
+   
+        }
       }
       .nav__menu_toggle_close{
         .nav__bar:first-child{
