@@ -10,7 +10,7 @@ function handleClick(event) {
 		event.currentTarget.parentElement.classList.toggle(styles.nav__menu_mobile);
 
 		document.body.style.maxHeight = (document.body.style.maxHeight!=="100vh") ? "100vh" : "none";
-		document.body.style.overflow = (document.body.style.overflow!=="hidden") ? "hidden": "visible";
+		document.body.style.overflow = (event.currentTarget.parentElement.classList.contains(styles.nav__menu_mobile)) ? "hidden": "visible";
 		
 		
 	
