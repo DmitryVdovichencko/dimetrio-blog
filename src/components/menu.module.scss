@@ -1,0 +1,111 @@
+h1{
+    margin:0px;
+    padding:0px;
+  }
+  @import url('https://fonts.googleapis.com/css?family=Nunito:200,400');
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+    .header a{
+      text-decoration: none;
+        color:#0FE1CF; 
+        
+        font-size: 1.2em;
+        font-weight: bold;
+        
+    }
+    .header a:visited{
+      color:#0FE1CF; 
+    }
+    .header{
+      display:flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding:10px 10% 10px 20%;
+      
+      background-color: #5951B0;
+
+     
+      
+    }
+    .nav__header{
+     
+      
+        margin-left:0px;
+        color:#0FE1CF; 
+  
+        position: relative;
+        z-index: 5;
+        font-family: 'Nunito', sans-serif;
+        font-weight: normal;
+        font-size:2em;
+        
+      }
+      nav{
+        display: flex;
+        flex-flow: row nowrap;
+        width:100%;
+        justify-content:space-between;
+        align-items: center;
+      }
+  
+      .nav__links {
+        border-bottom: #0FE1CF solid 1px;
+        padding:5px 10px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 200;
+        font-size: 0.1em;
+      }
+
+      .nav__menu_toggle   {
+        // display: none;
+        .nav__bar{
+        cursor: pointer;
+        border-radius: 1px;
+        height: 5px;
+        width: 35px;
+        background: #0FE1CF;
+        margin: 6px 0;
+        display: block;}
+      }
+      .nav__menu_mobile{
+        
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index:1;
+        width:100%;
+        height:100vh;
+        display:flex;
+        flex-flow:column nowrap;
+        justify-content:center;
+        background-color: #5951B0;
+        border:solid 2px #0FE1CF;
+        box-sizing: border-box;
+          a{
+        display: block;
+        
+   
+        }
+        .nav__menu_toggle_close{
+          position:absolute;
+          top:10px;
+          right:10%;
+        }
+      }
+      .nav__menu_toggle_close{
+        .nav__bar:first-child{
+          -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+          transform: rotate(-45deg) translate(-9px, 6px);
+        }
+        .nav__bar:nth-child(2){
+          opacity:0;
+        }
+        .nav__bar:last-child{
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+        }
+      }
+
+@media (max-width: 768px) {
+  
+}
