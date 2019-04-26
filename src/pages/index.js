@@ -1,10 +1,11 @@
 import React from "react"
 import Background from "../components/background"
 import Layout from "../components/layout"
-import Header from "../components/header"
+import Header from "../sections/header"
 import Projects from "../sections/projects"
 import Posts from "../sections/posts"
 import HeroImage from "../components/hero_image";
+import Menu from "../components/Menu"
 // import laptop from "../assets/img/laptop.svg" 
 
 

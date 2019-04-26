@@ -1,5 +1,5 @@
 import React from "react"
-import Header from "../components/header"
+import Header from "../sections/header"
 import Skill from "../components/skill"
 import Project from "../components/project"
 import CV from "../components/cv"
