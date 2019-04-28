@@ -1,6 +1,6 @@
 import React from "react"
 import Post from "../components/post"
-import Header from "../components/header"
+import Header from "../sections/header"
 import { graphql } from "gatsby"
 import { dateFormat } from "../sections/posts"
 export default ({ data }) => {  

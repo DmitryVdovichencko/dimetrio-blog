@@ -32,7 +32,9 @@ export default () => (
     </svg> 
   </div>
  
-  <object type="image/svg+xml" className="cat-img" data={cat}>Your browser does not support SVGs</object>
+
+  <object type="image/svg+xml"  className="cat-img" data={cat}>Your browser does not support SVGs</object>
+
   <object type="image/svg+xml" className="flw-img"data={flower}>Your browser does not support SVGs</object>
   </div>
 )
