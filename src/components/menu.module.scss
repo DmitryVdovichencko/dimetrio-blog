@@ -57,7 +57,7 @@ h1{
       }
 
       .nav__menu_toggle   {
-        // display: none;
+        display: none;
         .nav__bar{
         cursor: pointer;
         border-radius: 1px;
@@ -93,8 +93,8 @@ h1{
         }
         .nav__menu_toggle_close{
           position:absolute;
-          top:10px;
-          right:10%;
+          top:20px;
+          right:10px;
         }
       }
       .nav__menu_toggle_close{
@@ -121,4 +121,13 @@ h1{
      
       
     }
+}
+@media only screen and (max-width: 640px) {
+  .nav__links{
+    display:none;
+  }
+  .nav__menu_toggle{
+    display: block;
+    margin:auto 10px;
+  }
 }

@@ -1,14 +1,14 @@
 import React from "react"
-
+import styles from "./heroImage.module.scss"
 import developer from "../assets/img/developer.svg" 
 import cat from "../assets/img/cat.svg" 
 import flower from "../assets/img/flower.svg" 
 
 export default () => (
-  <div className='hero-image'>
-  <div className="dev">
+  <div className={styles.image}>
+  <div className={styles.dev}>
   <object type="image/svg+xml" className="dev__img" data={developer}>Your browser does not support SVGs</object>
-  <svg width="100%" height="200" className="dev__laptop" viewBox="0 0 95% 180" >
+  <svg width="100%" height="200" className="dev__laptop" preserveAspectRatio="xMidYMid meet" >
     <rect x="10" y="10"rx="20" ry="20" width="90%" height="170" />
     <linearGradient id="linear-gradient">
     <stop offset="0%" stopColor="#360033"/>
@@ -33,8 +33,8 @@ export default () => (
   </div>
  
 
-  <object type="image/svg+xml"  className="cat-img" data={cat}>Your browser does not support SVGs</object>
+  <object type="image/svg+xml"  className={styles.cat} data={cat}>Your browser does not support SVGs</object>
 
-  <object type="image/svg+xml" className="flw-img"data={flower}>Your browser does not support SVGs</object>
+  <object type="image/svg+xml" className={styles.flower} data={flower}>Your browser does not support SVGs</object>
   </div>
 )

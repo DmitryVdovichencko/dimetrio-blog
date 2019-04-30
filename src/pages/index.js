@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Header from "../sections/header"
 import Projects from "../sections/projects"
 import Posts from "../sections/posts"
-import HeroImage from "../components/hero_image";
+import HeroImage from "../components/HeroImage";
 import Menu from "../components/Menu"
 // import laptop from "../assets/img/laptop.svg" 
 
