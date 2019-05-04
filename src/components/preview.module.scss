@@ -1,7 +1,58 @@
+//function for removing the unit of value
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+/* mixin for calculate box width based on
+1. minimal width ($min-vw)
+2. maximal width ($max-vw)
+3. minimal width-size ($min-font-size)
+4. maximal font-size ($max-font-size)
+*/
+@mixin fluid-type($min-vw, $max-vw, $min-width, $max-width) {
+  //check units of mixin's parameters 
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-width);
+  $u4: unit($max-width);
+//check out that units for parameter's values are the same
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    //linking for parent selector
+    & {
+      //font-size set to min value 
+      width: $min-width;
+      // for screens between min and max width
+      // calculating font-size
+      // add calc for formula 
+      // calculate difference between max & min font size 
+      // scaling font size to width of our container
+      
+      @media screen and (min-width: $min-vw) {
+        width: calc(#{$min-width} + #{strip-unit($max-width - $min-width)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+      }
+
+      @media screen and (min-width: $max-vw) {
+        width: $max-width;
+      }
+    }
+  }
+}
+
+$min_width_scr: 320px;
+$max_width_scr: 1900px;
+$min_width: 280px;
+$max_width: 400px;
+
+
+
+
+
+
 .preview{
    
     flex:0;
-    width:auto;
+   
+    @include fluid-type($min_width_scr, $max_width_scr, $min_width, $max_width);
+    
     min-height: 400px;
     box-sizing: border-box;
     background: white;
@@ -9,7 +60,6 @@
     flex-flow:column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    
     border-radius: 5px;
     -webkit-box-shadow: 10px 10px 10px -7px rgba(0,0,0,0.65);
     -moz-box-shadow: 10px 10px 10px -7px rgba(0,0,0,0.65);
@@ -29,14 +79,14 @@
     .preview__content{
         padding:5px 10px;
         line-height: 1.5em;
- max-width: 400px;
+ 
     }
   
     h1{
         // border:red solid 1px;
         box-sizing: border-box;
         
-        min-width:350px;
+        
         color:white;
         background: #5951B0;
         background:linear-gradient(-45deg, transparent 45px,#5951B0 0);
@@ -50,4 +100,23 @@
         
 
     }
+}
+.preview__links{
+  display: flex;
+  flex-flow:row nowrap;
+  align-items: center;
+}
+.preview__url{
+  margin: auto 10px;
+  color:#5951B0;
+  border-bottom: 2px solid rgba(89,81,176,0.4);
+  font-size:1.2em;
+  padding: 0px 5px;
+}
+.preview__url:visited{
+   color:#5951B0;
+}
+.preview__url:hover{
+  border-bottom: 4px solid rgba(89,81,176,1);
+  background-color: rgba(15,225,207,0.3)
 }

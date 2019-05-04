@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "./preview.module.scss"
-
+import DateComponent from "./date"
 
 const PreviewPost = props => (
     <div className={styles.preview}>
@@ -10,7 +10,8 @@ const PreviewPost = props => (
             <img className={styles.preview__postImg} src={props.img_src} alt={props.img_title} />
             <div className={styles.preview__content}>
               <p className={styles.preview__type}>{props.type}</p>
-              <p className={styles.preview__date} >{props.publishedDate}</p>
+              <DateComponent dateStr={props.publishedDate}></DateComponent>
+              
               <p className={styles.preview__excerpt} dangerouslySetInnerHTML={props.content}></p>
             </div>
 

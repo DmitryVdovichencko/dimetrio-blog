@@ -23,14 +23,18 @@
     height: 60vh;
     object-fit: cover;
 }
-.post__date{
+.post__date {
     background:#333;
     color:white;
     margin:10px auto 10px 0px;
     padding:10px;
     border-radius:5px;
     display:flex;
-    flex-direction: column;
+    flex-direction: row nowrap;
     align-items: flex-start;
+    justify-content: center;
     width: max-content;
+    span{
+        padding:0px 10px;
+    }
 }

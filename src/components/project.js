@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { Icon, InlineIcon } from '@iconify/react';
+import githubOutline from '@iconify/react/ant-design/github-outline';
 import PreviewProject from './previewProject';
 
 const Project = ({
@@ -16,7 +17,7 @@ const Project = ({
   const content = description.childMarkdownRemark.html;
   if(preview){
     return(
-   
+   <a href={projectUrl}>
     
         <PreviewProject
         name={name}
@@ -27,7 +28,9 @@ const Project = ({
         publishedDate={publishedDate}
         projectUrl={projectUrl}
         repositoryUrl={repositoryUrl}
-        ></PreviewProject>
+        >
+        </PreviewProject>
+    </a>
        
       );
   }
@@ -40,7 +43,7 @@ const Project = ({
             <p className="project__type">{type}</p>
             <p className="project__descr" dangerouslySetInnerHTML={{__html: content }}></p>
             <a className="project__url" href={projectUrl}> {name}</a>
-            <a className="project__repo" href={repositoryUrl}>{name} github repository</a>
+            <a className="project__repo" href={repositoryUrl}><Icon icon={githubOutline} /></a>
     
     
         </div>
