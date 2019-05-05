@@ -7,6 +7,7 @@ import Posts from "../sections/posts"
 import HeroImage from "../components/HeroImage";
 import Menu from "../components/Menu"
 import Footer from "../sections/footer"
+
 // import laptop from "../assets/img/laptop.svg" 
 
 
@@ -22,8 +23,10 @@ export default ()=> {
       <Projects></Projects>
   
       <Posts></Posts>
+      
       <Footer></Footer>
     </Layout>
+  
   </div>
 
 }

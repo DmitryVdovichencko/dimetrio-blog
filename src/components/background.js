@@ -30,5 +30,14 @@ export default () => (
 				</defs>
 		    </svg>
     </div>
+    <div className={styles.footer__section}>
+      <svg className="clip-svg">
+				<defs>
+          <clipPath id="polygon-footer" clipPathUnits="objectBoundingBox">
+						<polygon points="0 1, 0 0.3, 1 0, 1 1" />
+					</clipPath>
+				</defs>
+		    </svg>
+    </div>
   </div>
 )
