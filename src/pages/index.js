@@ -1,5 +1,6 @@
 import React from "react"
 import Background from "../components/background"
+import Overlap from "../components/overlap"
 import Layout from "../components/layout"
 import Header from "../sections/header"
 import Projects from "../sections/projects"
@@ -14,9 +15,10 @@ import Footer from "../sections/footer"
 export default ()=> {
   // Import result is the URL of your image
   return <div>
-    <Background></Background>
+   <Overlap>
+    <Background></Background> 
     <Layout>
-      <Header></Header>
+    
 
       <HeroImage></HeroImage>
 
@@ -24,9 +26,9 @@ export default ()=> {
   
       <Posts></Posts>
       
-      <Footer></Footer>
+      
     </Layout>
-  
+  </Overlap>
   </div>
 
 }

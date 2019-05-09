@@ -1,10 +1,10 @@
 import React from "react"
-import Header from "../sections/header"
+import Layout from "../components/layout"
 import Skill from "../components/skill"
 import Project from "../components/project"
 import CV from "../components/cv"
 import { graphql } from "gatsby"
-
+import Footer from "../sections/footer"
 
 
 export default ({ data }) => {  
@@ -13,7 +13,7 @@ export default ({ data }) => {
   
   return (
   <div>
-   <Header></Header>
+   <Layout>
    <CV 
         name={about.node.name} 
         skills=  {about.node.skills.map((p, i) => (
@@ -27,7 +27,7 @@ export default ({ data }) => {
        ))}
        otherlang="ru">
   </CV>
-
+  </Layout>
     
   </div>        
       

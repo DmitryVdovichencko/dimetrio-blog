@@ -6,10 +6,12 @@
     border-radius:5px;
     display:flex;
     flex-direction: row wrap;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     width: max-content;
-    span{
-        padding:0px 5px;
-    }
+  
+   
+}
+.dateIcon{
+    margin:-0.2em 5px 0em 0px;
 }

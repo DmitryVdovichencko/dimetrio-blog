@@ -2,12 +2,13 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    position: absolute;
-    left: 0;
-    top:0;
-    z-index: -1;
+z-index: -1;
+position: absolute;top:0;
+left:0;
     width:100%;
     background:url(../assets/img/bg.png) repeat;
+    flex-grow: 1;
+    
 }
 .header__section{
     height: 300px;
@@ -54,9 +55,9 @@ background: linear-gradient(to bottom, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, 
     height: 300px;
     width:100%;
     margin:0px auto;
-    background: #1D2B64;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #8360c3, #1D2B64);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #8360c3, #1D2B64); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgb(44,51,114);  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to bottom, #8360c3, #1D2B64);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to bottom, #8360c3, #1D2B64); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
 

@@ -11,7 +11,7 @@ const DateComponent = ({dateStr}) => (
     
    
 	    
-	          <Icon icon={calendarAlt} />
+	          <Icon icon={calendarAlt} className={styles.dateIcon} />
 	          <span>{dateStr}</span>
           
 
