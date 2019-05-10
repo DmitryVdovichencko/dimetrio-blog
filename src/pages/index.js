@@ -15,7 +15,7 @@ import Footer from "../sections/footer"
 export default ()=> {
   // Import result is the URL of your image
   return <div>
-   <Overlap>
+  
     <Background></Background> 
     <Layout>
     
@@ -28,7 +28,7 @@ export default ()=> {
       
       
     </Layout>
-  </Overlap>
+  
   </div>
 
 }

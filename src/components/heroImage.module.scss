@@ -52,7 +52,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     position: relative;
-    margin-top: 0px;
+    margin-top: -250px;
     margin-bottom:200px;
     border-bottom: solid 5px #5951B0;
     @include fluid-type($min_width, $max_width, $min_font, $max_font);
