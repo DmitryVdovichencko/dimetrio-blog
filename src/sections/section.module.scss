@@ -10,12 +10,19 @@ margin-bottom: 0px;
 color:white;
 font-family: 'Kalam', cursive;
 font-size: 1.3em;
-padding:0px 5px;
+padding:0px;
 width:100%;
 // border:solid 1px green;
-background: rgb(44,51,114);
+
 box-sizing: border-box;
 }
 .footer__icon{
 	margin:0px 5px -0.2em 5px;
+}
+.footer__content{
+background: rgb(44,51,114);
+p{
+	margin:0px;
+	padding: 5px;
+}
 }

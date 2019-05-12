@@ -3,11 +3,18 @@ import styles from './layout.module.scss';
 import Header from "../sections/header"
 import Footer from "../sections/footer"
 
-export default ({ children }) => (
+
+
+
+
+
+export default (props) => (
   <div className={styles.layout}>
-  <Header></Header>
-  	{children}
-<Footer></Footer>
+  <Header displayBg = {props.path==="/"}></Header>
+  	{props.children}
+  
+<Footer displayBg = {props.path==="/"} ></Footer>
     	
   </div>
 )
+

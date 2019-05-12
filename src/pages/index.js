@@ -8,16 +8,17 @@ import Posts from "../sections/posts"
 import HeroImage from "../components/HeroImage";
 import Menu from "../components/Menu"
 import Footer from "../sections/footer"
+import { Location } from '@reach/router'
 
 // import laptop from "../assets/img/laptop.svg" 
 
 
-export default ()=> {
+export default ({location})=> {
   // Import result is the URL of your image
   return <div>
   
     <Background></Background> 
-    <Layout>
+    <Layout path = {location.pathname}>
     
 
       <HeroImage></HeroImage>
@@ -25,7 +26,7 @@ export default ()=> {
       <Projects></Projects>
   
       <Posts></Posts>
-      
+     
       
     </Layout>
   

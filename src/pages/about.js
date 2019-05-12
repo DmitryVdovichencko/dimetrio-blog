@@ -5,15 +5,15 @@ import Project from "../components/project"
 import CV from "../components/cv"
 import { graphql } from "gatsby"
 import Footer from "../sections/footer"
+import { Location } from '@reach/router'
 
-
-export default ({ data }) => {  
+export default ({ data, location }) => {  
  const about=data.allContentfulAbout.edges[0];
  
   
   return (
   <div>
-   <Layout>
+   <Layout path = {location.pathname}>
    <CV 
         name={about.node.name} 
         skills=  {about.node.skills.map((p, i) => (

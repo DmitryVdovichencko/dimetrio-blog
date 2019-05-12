@@ -4,16 +4,16 @@ import Skill from "../components/skill"
 import Project from "../components/project"
 import CV from "../components/cv"
 import { graphql} from "gatsby"
+import { Location } from '@reach/router'
+import Layout from "../components/layout"
 
-
-
-export default ({ data }) => {  
+export default ({ data, location }) => {  
  const about=data.allContentfulAbout.edges[0];
  
   
   return (
   <div>
-   <Header></Header>
+   <Layout path = {location.pathname}>
    <CV 
         name={about.node.name} 
         skills=  {about.node.skills.map((p, i) => (
@@ -27,6 +27,7 @@ export default ({ data }) => {
        ))}
        otherlang="en">
   </CV>
+  </Layout>
     
   </div>        
       

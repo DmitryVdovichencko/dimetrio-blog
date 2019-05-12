@@ -7,16 +7,22 @@ import gatsbyIcon from '@iconify/react/logos/gatsby';
 import netlifyIcon from '@iconify/react/logos/netlify';
 import growingHeart from '@iconify/react/emojione/growing-heart';
 import contentfulIcon from '@iconify/react/logos/contentful';
-export default () => {
+export default (props) => {
    
     return(
         
-        <footer className={styles.footer}>
-              <Bg 
-      points="0 1, 0 0.5, 1 0, 1 1"
+       <footer className={styles.footer}>
+         { props.displayBg ? <Bg 
+      points="0 1, 0 0.7, 1 0, 1 1"
       id="polygon-footer"
       className={bgStyles.footer__section}
-      ></Bg>
+      ></Bg>  : null }   
+    
+                
+
+  
+   
+      <div className={styles.footer__content}>
             <p> Created with 
             <Icon icon={contentfulIcon} className={styles.footer__icon} />
             Contentful
@@ -28,7 +34,7 @@ export default () => {
             <Icon icon={netlifyIcon} className={styles.footer__icon}/>
             Netlify
             </p>
-   
+        </div>   
         </footer>
         
         
