@@ -17,7 +17,7 @@ const Project = ({
   const content = description.childMarkdownRemark.html;
   if(preview){
     return(
-   <a href={projectUrl}>
+   <div>
     
         <PreviewProject
         name={name}
@@ -30,7 +30,7 @@ const Project = ({
         repositoryUrl={repositoryUrl}
         >
         </PreviewProject>
-    </a>
+    </div>
        
       );
   }

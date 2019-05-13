@@ -1,9 +1,8 @@
 import React from "react"
 import Post from "../components/post"
-import Header from "../sections/header"
 import { graphql } from "gatsby"
 import { dateFormat } from "../sections/posts"
-import { Location } from '@reach/router'
+import { location } from '@reach/router'
 import Layout from "../components/layout"
 export default ({ data,location }) => {  
   const post = data.contentfulPost, img = data.contentfulPost.image.file.url, content= post.article.childMarkdownRemark.html;

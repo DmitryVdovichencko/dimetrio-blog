@@ -9,7 +9,7 @@ function handleClick(event) {
         event.currentTarget.classList.toggle(styles.nav__menu_toggle_close);
         event.currentTarget.parentElement.classList.toggle(styles.nav__menu_mobile);
 
-        document.body.style.maxHeight = (document.body.style.maxHeight!=="100vh") ? "100vh" : "none";
+        document.body.style.maxHeight = (document.body.style.maxHeight!=="100vh"&& event.currentTarget.parentElement.classList.contains(styles.nav__menu_mobile)) ? "100vh" : "none";
         document.body.style.overflow = (event.currentTarget.parentElement.classList.contains(styles.nav__menu_mobile)) ? "hidden": "visible";
         
         
@@ -47,4 +47,6 @@ const Menu = ({header, links})=> {
     );
 }
 export default Menu;
+
+
 
