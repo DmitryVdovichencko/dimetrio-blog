@@ -47,7 +47,7 @@
 .image{
 	display:flex;
   border:solid 1px red;
-    width:70%;
+    width:60%;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: flex-start;
@@ -59,9 +59,9 @@
 }
 .dev{
     height: 370px;
-    width:40%;
+    width:30%;
     max-width:350px;
-   
+   min-width:270px;
 	border:solid 1px grey;
 }
 .cat{
@@ -98,7 +98,13 @@
  .sticker{
   width:30px;
   height: 30px;
-  // transform: translate(295px, 115px);
+  position: relative;
+  z-index: 4;
+  left:-200px;
+  top:10px;
+  transition-duration: 5s;
+    transition-timing-function: ease;
+  transform: translate(300px, 115px);
 }
 @media only screen and (max-width: 1000px) {
   .image {

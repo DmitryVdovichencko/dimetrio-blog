@@ -8,9 +8,9 @@ import netlify from "../assets/img/netlify.svg"
 export default () => (
   <div className={styles.image}>
   <div className={styles.dev}>
-  <object type="image/svg+xml" className="dev__img" data={developer}>Your browser does not support SVGs</object>
+  <object type="image/svg+xml" className="dev__img"  data={developer}>Your browser does not support SVGs</object>
    <object type="image/svg+xml" className={styles.sticker} data={netlify}>Your browser does not support SVGs</object>
-  <svg width="350px" height="200px" viewBox="0 0 350 200"className="dev__laptop" preserveAspectRatio="xMinYMid meet" >
+  <svg width="100%" height="200px" viewBox="0 0 100% 200"className="dev__laptop" preserveAspectRatio="xMinYMid meet" >
    
     <rect x="10" y="10"rx="20" ry="20" width="90%" height="170" />
     <linearGradient id="linear-gradient">
