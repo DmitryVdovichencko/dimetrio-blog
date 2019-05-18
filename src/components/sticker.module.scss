@@ -1,0 +1,19 @@
+    .sticker {
+      opacity: 1;
+      transition: all .5s;
+      transform: translateX(-100vw) scale(0.95);
+      width:30px;
+      height: 30px;
+ 
+      z-index: 2;
+      left:-200px;
+      top:10px;
+    }
+
+  
+    
+
+    .sticker.active {
+      opacity: 1;
+      transform: translateX(0%) scale(1);
+    }
