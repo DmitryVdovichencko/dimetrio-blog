@@ -9,7 +9,7 @@ export default () => (
   <div className={styles.image}>
   <div className={styles.dev}>
   <object type="image/svg+xml" className={styles.dev__img}  data={developer}>Your browser does not support SVGs</object>
-   <object type="image/svg+xml" className={styles.sticker} data={netlify}>Your browser does not support SVGs</object>
+  
    <Sticker stickerName = {netlify} />
    <div className={styles.dev__laptop}>
   <svg width="100%" height="200px" viewBox="0 0 100% 200" preserveAspectRatio="xMinYMid meet" >
