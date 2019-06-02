@@ -66,11 +66,13 @@
 }
 .dev__laptop{
       position: relative;
-    top:-20px;
+    top:-10px;
 
-    fill: whitesmoke;
-    stroke:rgb(51,10,58);
-    stroke-width:3;
+   height:170px;
+   border-radius: 10px; 
+    border: solid 3px rgb(51,10,58);
+    background-image: url("../assets/img/bg.png");
+    background-size: cover;
     
     margin: auto;
     margin-left:5px;
