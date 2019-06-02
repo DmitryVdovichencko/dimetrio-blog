@@ -3,14 +3,13 @@ import styles from "./heroImage.module.scss"
 import developer from "../assets/img/developer.svg" 
 import cat from "../assets/img/cat.svg" 
 import flower from "../assets/img/flower.svg" 
-import netlify from "../assets/img/netlify.svg" 
-import Sticker from "./Sticker"
+
 export default () => (
   <div className={styles.image}>
   <div className={styles.dev}>
   <object type="image/svg+xml" className={styles.dev__img}  data={developer}>Your browser does not support SVGs</object>
   
-   <Sticker stickerName = {netlify} />
+   
    <div className={styles.dev__laptop}>
   <svg width="100%" height="200px" viewBox="0 0 100% 200" preserveAspectRatio="xMinYMid meet" >
    

@@ -46,7 +46,7 @@
 
 .image{
 	display:flex;
-  border:solid 1px red;
+  
     width:60%;
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -61,23 +61,23 @@
     height: 370px;
     width:30%;
     max-width:350px;
-   min-width:250px;
-	border:solid 1px grey;
+   min-width:220px;
+	
 }
 .dev__laptop{
       position: relative;
     top:-20px;
 
     fill: whitesmoke;
-    stroke:#4d4d4d;
+    stroke:rgb(51,10,58);
     stroke-width:3;
     
     margin: auto;
     margin-left:5px;
-  border:solid 1px blue;
+  
 }
 .dev__img{
-  border:solid 1px red;
+  
      height:200px;
     top:10px;
     left:50px;
@@ -88,7 +88,7 @@
     width:30%;
     align-self: flex-end;
     margin-bottom: -45px;
-    border:solid 1px green;
+    
     
 }
 .flower{
@@ -115,17 +115,7 @@
    
  
  }
- .sticker{
-  width:30px;
-  height: 30px;
-  position: relative;
-  z-index: 2;
-  left:-200px;
-  top:10px;
-  transition-duration: 20s;
-    transition-timing-function: ease;
-  transform: translate(300px, 115px);
-}
+
 @media only screen and (max-width: 1000px) {
   .image {
   	width:100%;
@@ -143,5 +133,7 @@ width:70%;
 @media only screen and (max-width: 410px) {
 .cat{
 	margin-bottom: -55px;
+
 }
+
 }
