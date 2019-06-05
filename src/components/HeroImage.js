@@ -3,7 +3,7 @@ import styles from "./heroImage.module.scss"
 import developer from "../assets/img/developer.svg" 
 import cat from "../assets/img/cat.svg" 
 import flower from "../assets/img/flower.svg" 
-import bg from "../assets/img/bg.png" 
+
 
 export default () => (
   <div className={styles.image}>

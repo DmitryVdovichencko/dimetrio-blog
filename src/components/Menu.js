@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "gatsby";
 import styles from './menu.module.scss';
+import NavLink from './NavLink';
 
 function handleClick(event) {
 
@@ -30,8 +31,9 @@ const Menu = ({header, links})=> {
                 </Link>
            <div className={styles.nav__menu}>
             {
-            links.map((link) => {
-              return <Link className={styles.nav__links} to={link.refLink} > {link.nameLink} </Link>
+            links.map((link,i) => {
+                return <NavLink key={i} refLink={link.refLink} nameLink = {link.nameLink} />
+              
               })
             }
          

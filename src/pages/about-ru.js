@@ -1,10 +1,10 @@
 import React from "react"
-import Header from "../sections/header"
+
 import Skill from "../components/skill"
 import Project from "../components/project"
 import CV from "../components/cv"
 import { graphql} from "gatsby"
-import { Location } from '@reach/router'
+
 import Layout from "../components/layout"
 
 export default ({ data, location }) => {  
@@ -17,12 +17,12 @@ export default ({ data, location }) => {
    <CV 
         name={about.node.name} 
         skills=  {about.node.skills.map((p, i) => (
-           <Skill {...p} />
+           <Skill key = {i} {...p} />
           
         )
         )}
         projects =  {about.node.projects.map((p, i) => (
-          <Project key={p.id} {...p} cv={true} />
+          <Project key={i} {...p} cv={true} />
          
        ))}
        otherlang="en">

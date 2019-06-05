@@ -1,5 +1,5 @@
     import React from "react"
-import styles from "./background.module.scss"
+
 export default (props) => (
     <div className= {props.className}>
       <svg className="clip-svg">

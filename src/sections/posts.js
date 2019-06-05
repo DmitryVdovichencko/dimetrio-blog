@@ -76,7 +76,7 @@ const Post= ({
     render={({ contentfulAbout }) => (
       <section className={styles.previews}>
         {contentfulAbout.posts.map((p, i) => (
-           <Post {...p} />
+           <Post key={i} {...p} />
           
         ))}
        <Bg 

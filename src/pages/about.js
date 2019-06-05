@@ -4,8 +4,7 @@ import Skill from "../components/skill"
 import Project from "../components/project"
 import CV from "../components/cv"
 import { graphql } from "gatsby"
-import Footer from "../sections/footer"
-import { Location } from '@reach/router'
+
 
 export default ({ data, location }) => {  
  const about=data.allContentfulAbout.edges[0];
@@ -17,12 +16,12 @@ export default ({ data, location }) => {
    <CV 
         name={about.node.name} 
         skills=  {about.node.skills.map((p, i) => (
-           <Skill {...p} />
+           <Skill key = {i} {...p} />
           
         )
         )}
         projects =  {about.node.projects.map((p, i) => (
-          <Project key={p.id} {...p} cv={true} />
+          <Project key={i} {...p} cv={true} />
          
        ))}
        otherlang="ru">

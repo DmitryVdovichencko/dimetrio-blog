@@ -1,5 +1,5 @@
 import React from "react";
-import { Icon, InlineIcon } from '@iconify/react';
+import { Icon } from '@iconify/react';
 import calendarAlt from '@iconify/react/dashicons/calendar-alt';
 import styles from "./date.module.scss"
 

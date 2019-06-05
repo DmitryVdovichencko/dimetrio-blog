@@ -1,5 +1,5 @@
 import React from "react"
-import { Icon, InlineIcon } from '@iconify/react';
+import { Icon } from '@iconify/react';
 import styles from './section.module.scss';
 import bgStyles from "../components/background.module.scss"
 import Bg from "../components/bg"

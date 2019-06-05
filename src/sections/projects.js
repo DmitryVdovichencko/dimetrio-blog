@@ -34,7 +34,7 @@ const Projects = () => (
     render={({ contentfulAbout }) => (
       <section className={styles.previews}>
            {contentfulAbout.projects.map((p, i) => (
-           <Project {...p} preview={true} />
+           <Project key = {i} {...p} preview={true} />
           
         ))}
       <Bg 
