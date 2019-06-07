@@ -3,9 +3,8 @@ h1{
     padding:0px;
   }
   @import url('https://fonts.googleapis.com/css?family=Nunito:200,400');
-    @import url('https://fonts.googleapis.com/css?family=Roboto:300,700');
-    @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
-    .header a{
+//common menu styles
+    .menu a{
       text-decoration: none;
         color:#0FE1CF; 
         font-weight: bold;
@@ -13,10 +12,10 @@ h1{
         
         
     }
-    .header a:visited{
+    .menu a:visited{
       color:#0FE1CF; 
     }
-    .header{
+    .menu{
       display:flex;
       flex-flow: row nowrap;
       justify-content: space-between;
@@ -24,13 +23,16 @@ h1{
       padding:10px 10% 10px 20%;
       
       background-color: #5951B0;
-
-     
-      
     }
-    .nav__header{
+    .title{
      
-      
+     display: block;
+     
+      h1{
+        font-size:1.5em;
+         
+         
+      }
         margin-left:0px;
         color:#0FE1CF; 
   
@@ -38,17 +40,17 @@ h1{
         z-index: 5;
         font-family: 'Nunito', sans-serif;
         font-weight: normal;
-        font-size:2em;
+        
         
       }
       nav{
         display: flex;
         flex-flow: row nowrap;
-        width:100%;
+        width:50%;
         justify-content:space-between;
         align-items: center;
       }
-      .nav__menu{
+      .nav__links{
        
           display: flex;
           flex-flow: row nowrap;
@@ -58,30 +60,13 @@ h1{
         
       }
   
-      .nav__links {
-        // border-bottom: #0FE1CF solid 1px;
-        margin:5px 10px;
-        padding:0px;
-        font-family: 'Roboto', sans-serif;
    
-        font-weight: 300;
-        font-size: 0.1em;
-      }
-    .nav__links:after {
-    background-color: #0FE1CF;
-    content: "";
-    display: none;
-    height: 2px;
-    width: 0px;
-    }
-    .nav__links:after:hover{
-      width:100%;
-      display: block;
-    } 
 
-      .nav__menu_toggle   {
+      .menuButton  {
         display: none;
-        .nav__bar{
+      
+      }
+        .menuButton__bar{
         cursor: pointer;
         border-radius: 1px;
         height: 5px;
@@ -89,8 +74,7 @@ h1{
         background: #0FE1CF;
         margin: 6px 0;
         display: block;}
-      }
-      .nav__menu_mobile{
+      .nav_mobile{
         
         position: absolute;
         top:0;
@@ -114,28 +98,32 @@ h1{
         flex-flow:column nowrap;
         margin:auto;
         }
-        .nav__menu_toggle_close{
+       
+      }
+       .menuButton_close{
           position:absolute;
           top:20px;
           right:10px;
+          display: block;
         }
-      }
-      .nav__menu_toggle_close{
-        .nav__bar:first-child{
+      .menuButton_close{
+        .menuButton__bar:first-child{
           -webkit-transform: rotate(-45deg) translate(-9px, 6px);
           transform: rotate(-45deg) translate(-9px, 6px);
+          z-index: 10;
         }
-        .nav__bar:nth-child(2){
+        .menuButton__bar:nth-child(2){
           opacity:0;
         }
-        .nav__bar:last-child{
+        .menuButton__bar:last-child{
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-8px, -8px);
+         z-index: 10;
         }
       }
 
 @media (max-width: 768px) {
-      .header{
+      .menu{
      
       padding:10px;
       
@@ -146,10 +134,16 @@ h1{
     }
 }
 @media only screen and (max-width: 640px) {
-  .nav__links{
-    display:none;
+  .nav{
+    display: none;
   }
-  .nav__menu_toggle{
+
+  .nav_mobile{
+     .nav__links{
+    display:block;
+    }
+  }
+  .menuButton{
     display: block;
     margin:auto 10px;
   }
