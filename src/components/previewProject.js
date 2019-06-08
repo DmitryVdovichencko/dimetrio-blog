@@ -1,5 +1,5 @@
 import React from "react"
-import { Icon } from '@iconify/react';
+import { Icon, InlineIcon } from '@iconify/react';
 import githubOutline from '@iconify/react/ant-design/github-outline';
 import styles from "./preview.module.scss"
 import DateComponent from "./date"

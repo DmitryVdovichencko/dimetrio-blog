@@ -12,12 +12,12 @@
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "dependencies": {
-    "@iconify/react": "^1.0.7",
-    "gatsby": "^2.0.115",
+    "@iconify/react": "^1.1.0",
+    "gatsby": "^2.8.6",
     "gatsby-cli": "^2.4.12",
     "gatsby-plugin-sass": "^2.0.10",
-    "gatsby-source-contentful": "^2.0.34",
-    "gatsby-source-filesystem": "^2.0.20",
+    "gatsby-source-contentful": "^2.0.67",
+    "gatsby-source-filesystem": "^2.0.38",
     "gatsby-transformer-remark": "^2.2.5",
     "node-sass": "^4.11.0",
     "react": "^16.8.0",
