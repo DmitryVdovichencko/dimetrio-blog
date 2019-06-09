@@ -1,6 +1,6 @@
 import React from "react";
 import { Icon } from '@iconify/react';
-import calendarAlt from '@iconify/react/dashicons/calendar-alt';
+import calendarAlt from '@iconify/icons-dashicons/calendar-alt';
 import styles from "./date.module.scss"
 
 

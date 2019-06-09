@@ -3,10 +3,10 @@ import { Icon, InlineIcon } from '@iconify/react';
 import styles from './section.module.scss';
 import bgStyles from "../components/background.module.scss"
 import Bg from "../components/bg"
-import gatsbyIcon from '@iconify/react/logos/gatsby';
-import netlifyIcon from '@iconify/react/logos/netlify';
-import growingHeart from '@iconify/react/emojione/growing-heart';
-import contentfulIcon from '@iconify/react/logos/contentful';
+import gatsbyIcon from '@iconify/icons-logos/gatsby';
+import netlifyIcon from '@iconify/icons-logos/netlify';
+import growingHeart from '@iconify/icons-emojione/growing-heart';
+import contentfulIcon from '@iconify/icons-logos/contentful';
 export default (props) => {
    
     return(
