@@ -18,5 +18,12 @@
        background-color: rgb(89,81,176);
        padding:5px;
        color:white;
+       border-radius: 3px;
    }
+}
+
+@media only screen and (max-width: 640px){
+  .cv{
+    width:90%;
+  }
 }

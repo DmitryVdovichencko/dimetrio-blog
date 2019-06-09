@@ -1,5 +1,5 @@
 import React from 'react';
-import { StaticQuery, graphql,Link } from 'gatsby';
+import { StaticQuery, graphql } from 'gatsby';
 import styles from "./section.module.scss"
 import PreviewPost from '../components/previewPost';
 import Bg from "../components/bg"
@@ -27,7 +27,7 @@ const Post= ({
   }) => (
    
 
-    <Link to={fields.slug}>
+    <a href={fields.slug}>
  
     <PreviewPost
     name={caption}
@@ -39,7 +39,7 @@ const Post= ({
     >
 
     </PreviewPost>
-    </Link>
+    </a>
    
   );
   const Posts = () => (

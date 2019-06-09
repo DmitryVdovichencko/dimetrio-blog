@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icon, InlineIcon } from '@iconify/react';
+import { InlineIcon } from '@iconify/react';
 import githubOutline from '@iconify/icons-ant-design/github-outline';
 import PreviewProject from './previewProject';
 
@@ -43,7 +43,7 @@ const Project = ({
             <p className="project__type">{type}</p>
             <p className="project__descr" dangerouslySetInnerHTML={{__html: content }}></p>
             <a className="project__url" href={projectUrl}> {name}</a>
-            <a className="project__repo" href={repositoryUrl}><Icon icon={githubOutline} /></a>
+            <a className="project__repo" href={repositoryUrl}><InlineIcon icon={githubOutline} /></a>
     
     
         </div>

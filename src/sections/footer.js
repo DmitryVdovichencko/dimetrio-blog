@@ -1,5 +1,5 @@
 import React from "react"
-import { Icon, InlineIcon } from '@iconify/react';
+import { InlineIcon } from '@iconify/react';
 import styles from './section.module.scss';
 import bgStyles from "../components/background.module.scss"
 import Bg from "../components/bg"
@@ -24,14 +24,14 @@ export default (props) => {
    
       <div className={styles.footer__content}>
             <p> Created with 
-            <Icon icon={contentfulIcon} className={styles.footer__icon} />
+            <InlineIcon icon={contentfulIcon} className={styles.footer__icon} />
             Contentful
-            <Icon icon={growingHeart} className={styles.footer__icon} />
+            <InlineIcon icon={growingHeart} className={styles.footer__icon} />
             and
-            <Icon icon={gatsbyIcon} className={styles.footer__icon} />
+            <InlineIcon icon={gatsbyIcon} className={styles.footer__icon} />
             Gatsby,
             hosted on
-            <Icon icon={netlifyIcon} className={styles.footer__icon}/>
+            <InlineIcon icon={netlifyIcon} className={styles.footer__icon}/>
             Netlify
             </p>
         </div>   

@@ -1,5 +1,5 @@
 import React from "react";
-import { Icon } from '@iconify/react';
+import { InlineIcon } from '@iconify/react';
 import calendarAlt from '@iconify/icons-dashicons/calendar-alt';
 import styles from "./date.module.scss"
 
@@ -11,7 +11,7 @@ const DateComponent = ({dateStr}) => (
     
    
 	    
-	          <Icon icon={calendarAlt} className={styles.dateIcon} />
+	          <InlineIcon icon={calendarAlt} className={styles.dateIcon} />
 	          <span>{dateStr}</span>
           
 

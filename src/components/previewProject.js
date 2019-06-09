@@ -1,5 +1,5 @@
 import React from "react"
-import { Icon, InlineIcon } from '@iconify/react';
+import { InlineIcon } from '@iconify/react';
 import githubOutline from '@iconify/icons-ant-design/github-outline';
 import styles from "./preview.module.scss"
 import DateComponent from "./date"
@@ -14,7 +14,7 @@ const PreviewProject = props => (
             <DateComponent dateStr={props.publishedDate}></DateComponent>
             <p className={styles.preview__descr} dangerouslySetInnerHTML={props.content}></p>
             <p className={styles.preview__links} >
-              <a className={styles.preview__repo} href={props.repositoryUrl}><Icon icon={githubOutline} height="30px" /></a>
+              <a className={styles.preview__repo} href={props.repositoryUrl}><InlineIcon icon={githubOutline} height="30px" /></a>
               <a className={styles.preview__url} href={props.projectUrl}> {props.name}</a>
             </p>
       </div>
