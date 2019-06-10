@@ -1,5 +1,5 @@
 import React from "react"
-import Background from "../components/background"
+
 
 import Layout from "../components/layout"
 
@@ -15,7 +15,7 @@ export default ({location})=> {
   // Import result is the URL of your image
   return <div>
   
-    <Background></Background> 
+    
     <Layout path = {location.pathname}>
     
 

@@ -17,7 +17,7 @@ left:0;
     background-color: #5951B0;
     /* clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 0% 100%); */
     clip-path: url("#polygon-clip-trapezoid");
-    margin:0px auto 0px auto;
+    margin:-2px auto 0px auto;
 }
 
 .projects__section{
@@ -58,7 +58,7 @@ background: linear-gradient(to bottom, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, 
 .footer__section{
     height: 50px;
     width:100%;
-    margin:0px auto;
+    margin:0px auto -2px auto;
     background: rgb(44,51,114);  /* fallback for old browsers */
 // background: -webkit-linear-gradient(to bottom, #8360c3, #1D2B64);  /* Chrome 10-25, Safari 5.1-6 */
 // background: linear-gradient(to bottom, #8360c3, #1D2B64); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
