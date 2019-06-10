@@ -23,9 +23,9 @@ const Projects = () => (
             publishedDate(formatString: "YYYY")
             logo {
               title
-              image: resize(width: 200, quality: 100) {
-                src
-              }
+                 file{
+            url
+          }
             }
           }
         }

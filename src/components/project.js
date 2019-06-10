@@ -21,7 +21,7 @@ const Project = ({
     
         <PreviewProject
         name={name}
-        img_src={logo.image.src}
+        img_src={logo.file.url}
         img_title={logo.title}
         type={type}
         content={{__html: content }}

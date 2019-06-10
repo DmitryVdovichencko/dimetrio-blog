@@ -21,7 +21,7 @@ left:0;
 }
 
 .projects__section{
-    height: 500px;
+    height: 100%;
     width:100%;
 background: #acb6e5;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to top, #86fde8, #acb6e5);  /* Chrome 10-25, Safari 5.1-6 */
@@ -32,8 +32,8 @@ z-index: -1;
 
     clip-path: url("#polygon-project");
     
-    margin:-400px auto;
-    
+    margin:auto;
+    margin-top:-400px;
     
     
 
