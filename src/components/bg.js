@@ -9,6 +9,6 @@ export default (props) => (
 					</clipPath>
 				</defs>
 		    </svg>
-            
+            {props.children}
     </div>
     )

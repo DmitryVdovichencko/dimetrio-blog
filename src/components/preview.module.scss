@@ -120,3 +120,17 @@ $max_width: 400px;
   border-bottom: 4px solid rgba(89,81,176,1);
   background-color: rgba(15,225,207,0.3)
 }
+.preview__tags{
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.preview__tag{
+  background:rgb(89,81,176);
+  color:white;
+  margin:5px;
+  padding: 5px;
+  border-radius:2px;
+}
+

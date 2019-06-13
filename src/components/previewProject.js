@@ -10,7 +10,10 @@ const PreviewProject = props => (
    <h1 className={styles.preview__header}>{props.name}</h1>
       <div className={styles.preview__content}>
             <img className={styles.preview__img} src={props.img_src} alt={props.img_title} />
-            <p className={styles.preview__type}>{props.type}</p>
+            <div className = {styles.preview__tags}>
+              {props.type.split(',').map((type,i)=><p key = {i} className={styles.preview__tag}>{type}</p>)}
+            </div>
+            
             <DateComponent dateStr={props.publishedDate}></DateComponent>
             <p className={styles.preview__descr} dangerouslySetInnerHTML={props.content}></p>
             <p className={styles.preview__links} >
