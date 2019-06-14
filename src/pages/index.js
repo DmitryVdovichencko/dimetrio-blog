@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import Projects from "../sections/projects"
 import Posts from "../sections/posts"
 import HeroImage from "../components/HeroImage";
-
+import About from "../sections/about"
 
 // import laptop from "../assets/img/laptop.svg" 
 
@@ -20,7 +20,7 @@ export default ({location})=> {
     
 
       <HeroImage></HeroImage>
-
+      <About></About>
       <Projects></Projects>
   
       <Posts></Posts>
