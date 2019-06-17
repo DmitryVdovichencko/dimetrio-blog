@@ -29,9 +29,12 @@ const About = () => (
     render={({ contentfulAbout }) => (
       
       <section className={styles.about}>
-      <div dangerouslySetInnerHTML={{__html:contentfulAbout.aboutMe.childMarkdownRemark.html}} className={styles.post__content}></div>
-   
- <Contacts contacts = {contentfulAbout.socialLinks} />
+<div className={styles.about__content}>
+  <h1>About me</h1>
+  <div dangerouslySetInnerHTML={{__html:contentfulAbout.aboutMe.childMarkdownRemark.html}} className={styles.about__text}></div>
+     
+  <Contacts contacts = {contentfulAbout.socialLinks} size='32px' color='#5951b0' />
+</div>
       </section>
     )}
     />

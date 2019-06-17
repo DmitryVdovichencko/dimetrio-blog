@@ -1,28 +1,33 @@
 import React from "react"
 import { InlineIcon } from '@iconify/react';
 import styles from './section.module.scss';
-import bgStyles from "../components/background.module.scss"
-import Bg from "../components/bg"
 import gatsbyIcon from '@iconify/icons-logos/gatsby';
 import netlifyIcon from '@iconify/icons-logos/netlify';
 import growingHeart from '@iconify/icons-emojione/growing-heart';
 import contentfulIcon from '@iconify/icons-logos/contentful';
-export default (props) => {
-   
-    return(
-        
-       <footer className={styles.footer}>
-         { props.displayBg ? <Bg 
-      points="0 1, 0 0.7, 1 0, 1 1"
-      id="polygon-footer"
-      className={bgStyles.footer__section}
-      ></Bg>  : null }   
-    
-                
+import Contacts from '../components/Contacts';
+import { StaticQuery, graphql } from 'gatsby';
 
-  
-   
-      <div className={styles.footer__content}>
+
+const Footer = (props) => (
+    
+    <StaticQuery
+    query={graphql`
+      query FooterQuery {
+        contentfulAbout {
+          socialLinks{
+            name
+            url
+          }
+        }
+      }
+    `}
+    render={(props) => (
+     
+<footer className={styles.footer}>
+
+
+            <div className={styles.footer__content}>
             <p> Created with 
             <InlineIcon icon={contentfulIcon} className={styles.footer__icon} />
             Contentful
@@ -34,10 +39,16 @@ export default (props) => {
             <InlineIcon icon={netlifyIcon} className={styles.footer__icon}/>
             Netlify
             </p>
-        </div>   
+          
+        
+           
+     
+  <Contacts contacts = {props.contentfulAbout.socialLinks} size='24px' color='#8deee7' />
+  </div>   
         </footer>
-        
-        
-    )
 
-    }
+    )}
+    />
+  );
+  
+  export default Footer;

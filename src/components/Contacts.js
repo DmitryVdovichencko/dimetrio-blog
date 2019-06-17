@@ -12,8 +12,8 @@ const Contacts = props => (
 <div className = {styles.contacts}>
 	{props.contacts.map(
 		(contact,i)=>(
-			<a href = {contact.url} key={i}>
-				<InlineIcon icon={Icons[contact.name.toLowerCase()]} />
+			<a href = {contact.url} key={i} className = {styles.contact}>
+				<InlineIcon icon={Icons[contact.name.toLowerCase()]} height = {props.size} color = {props.color} />
 			</a>
 			)
 	)
@@ -26,3 +26,4 @@ const Contacts = props => (
 
 
 export default Contacts;
+

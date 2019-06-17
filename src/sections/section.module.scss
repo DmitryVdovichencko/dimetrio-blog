@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Kalam:300');
+
 .previews{
     display: flex;
     flex-flow:row wrap;
@@ -9,8 +9,8 @@
 margin: auto;
 margin-bottom: 0px;
 color:white;
-font-family: 'Kalam', cursive;
-font-size: 1.3em;
+font-weight: 200;
+font-size: 0.9em;
 padding:0px;
 width:100%;
 // border:solid 1px green;
@@ -22,8 +22,44 @@ box-sizing: border-box;
 }
 .footer__content{
 background: rgb(44,51,114);
+display: flex;
+flex-flow: column nowrap;
+justify-content: flex-start;
+align-items: center;
+padding:10px;
 p{
 	margin:0px;
 	padding: 5px;
 }
+}
+.about{
+	font-size:1.2em;
+	line-height: 1.5em;
+	width:100%;
+	font-weight: 200;
+	display:flex;
+	flex-flow:row nowrap;
+	justify-content: flex-end;
+	margin-top: -180px;
+	h1{
+		color: rgb(127,99,192);
+	}
+}
+.about__content{
+	max-width: 450px;
+	min-width:300px;
+	margin:auto;
+	width:calc(100% / 2);
+	padding:10px;
+	display:flex;
+	flex-flow:column nowrap;
+	justify-content: flex-start;
+
+}
+.about__text{
+	display:block;
+	padding: 0px 10px;
+	border-left:solid rgb(44,51,114) 4px;
+	background:rgba(141,238,231, 0.7);
+	margin:15px 0px;
 }
