@@ -14,7 +14,7 @@ const PreviewProject = props => (
               {props.type.split(',').map((type,i)=><p key = {i} className={styles.preview__tag}>{type}</p>)}
             </div>
             
-            <DateComponent dateStr={props.publishedDate}></DateComponent>
+            <DateComponent dateStr={props.publishedDate} theme="dark"></DateComponent>
             <p className={styles.preview__descr} dangerouslySetInnerHTML={props.content}></p>
             <p className={styles.preview__links} >
               <a className={styles.preview__repo} href={props.repositoryUrl}><InlineIcon icon={githubOutline} height="30px" /></a>

@@ -1,0 +1,40 @@
+.content{
+	border-bottom:solid 1px lightgrey;
+	width:50%;
+	min-width:300px;
+	margin:20px auto;
+	font-weight: 200;
+	padding:10px;
+	box-sizing: border-box;
+}
+.content__header{
+	font-size:2em;
+
+}
+.content__img{
+	height: 100px;
+	width:100px;
+	border-radius: 50%;
+	margin:auto 20px auto 0px;
+	
+}
+
+.content__descr{
+	display:flex;
+	flex-flow:row nowrap;
+	justify-content: flex-start;
+	
+}
+.content__text{
+	width:calc(80% - 100px);
+	
+	line-height:1.5;
+	min-width:180px;
+	margin:auto;
+	margin-left: 0px;
+}
+.content__date{
+	
+	color:#333;
+
+}

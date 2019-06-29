@@ -5,14 +5,14 @@ import styles from "./date.module.scss"
 
 
 
-const DateComponent = ({dateStr}) => (
-	<div className={styles.date}>
+const DateComponent = (props) => (
+	<div className={props.theme==="dark" ? styles.date_dark : styles.date_light}>
 		
     
    
 	    
 	          <InlineIcon icon={calendarAlt} className={styles.dateIcon} />
-	          <span>{dateStr}</span>
+	          <span>{props.dateStr}</span>
           
 
     	

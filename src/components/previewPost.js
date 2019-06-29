@@ -10,7 +10,7 @@ const PreviewPost = props => (
             <img className={styles.preview__postImg} src={props.img_src} alt={props.img_title} />
             <div className={styles.preview__content}>
               <p className={styles.preview__type}>{props.type}</p>
-              <DateComponent dateStr={props.publishedDate}></DateComponent>
+              <DateComponent dateStr={props.publishedDate} theme="dark"></DateComponent>
               
               <p className={styles.preview__excerpt} dangerouslySetInnerHTML={props.content}></p>
             </div>

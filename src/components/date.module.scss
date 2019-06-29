@@ -1,4 +1,8 @@
-.date {
+
+.dateIcon{
+    margin:-0.2em 5px 0em 0px;
+}
+.date_dark{
     background:#333;
     color:white;
     margin:5px auto 5px 0px;
@@ -9,9 +13,16 @@
     align-items: center;
     justify-content: center;
     width: max-content;
-  
-   
 }
-.dateIcon{
-    margin:-0.2em 5px 0em 0px;
+.date_light{
+    background:white;
+    color:#333;
+    margin:5px auto 5px 0px;
+    padding:5px;
+    border-radius:5px;
+    display:flex;
+    flex-direction: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
 }
