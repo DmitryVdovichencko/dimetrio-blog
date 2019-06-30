@@ -3,7 +3,7 @@ import Bg from "../components/bg"
 import bgStyles from "../components/background.module.scss"
 import Menu from "../components/Menu"
 
-const links = [{nameLink:'about',refLink:'/about/'},{nameLink:'main',refLink:'/'},{nameLink:'articles',refLink:'/articles/'}];
+const links = [{nameLink:'main',refLink:'/'},{nameLink:'articles',refLink:'/articles/'},{nameLink:'projects',refLink:'/projects/'},{nameLink:'about',refLink:'/about/'},];
 export default (props, { data }) => {
    
     return(

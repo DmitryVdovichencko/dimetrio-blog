@@ -2,6 +2,7 @@ import React from 'react';
 import { InlineIcon } from '@iconify/react';
 import githubOutline from '@iconify/icons-ant-design/github-outline';
 import PreviewProject from './previewProject';
+import styles from './project.module.scss'
 
 const Project = ({
     name,
@@ -37,13 +38,13 @@ const Project = ({
   if(cv){
     return(
     
-        <div className="project">
+        <div className={styles.project}>
         
             <h1>{name}</h1>
             <p className="project__type">{type}</p>
             <p className="project__descr" dangerouslySetInnerHTML={{__html: content }}></p>
-            <a className="project__url" href={projectUrl}> {name}</a>
-            <a className="project__repo" href={repositoryUrl}><InlineIcon icon={githubOutline} /></a>
+            <a className={styles.project__link} href={projectUrl}> {name} </a>
+            <a  href={repositoryUrl}><InlineIcon height='1.6em' className={styles.project__repo} icon={githubOutline} /></a>
     
     
         </div>
