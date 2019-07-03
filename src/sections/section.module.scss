@@ -63,3 +63,11 @@ p{
 	background:rgba(141,238,231, 0.7);
 	margin:15px 0px;
 }
+.section__link{
+	padding:0px 10px;
+	width:100%;
+	display:flex;
+	flex-flow:column nowrap;
+	align-items: flex-end;
+
+}

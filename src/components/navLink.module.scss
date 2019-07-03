@@ -4,11 +4,9 @@
         font-family: 'Roboto', sans-serif;
    
         font-weight: 300;
-        font-size: 0.1em;
-        display:flex;
-        flex-flow: column nowrap;
-        justify-content:flex-start;
-        align-items:flex-start;
+        font-size: 12px;
+        display:block;
+      
         &:after{
           background-color: #0FE1CF;
           content: "";
@@ -23,17 +21,17 @@
         }
 
 }
-   .link:after {
-    background-color: #0FE1CF;
-    content: "";
-    display: block;
-    height: 2px;
-    width: 0px;
-    }
-    .link:hover{
-      .link:after{
-        width:100%;
-      }
+   // .link:after {
+   //  background-color: #0FE1CF;
+   //  content: "";
+   //  display: block;
+   //  height: 2px;
+   //  width: 0px;
+   //  }
+   //  .link:hover{
+   //    .link:after{
+   //      width:100%;
+   //    }
       
       
-    } 
+   //  } 

@@ -39,7 +39,7 @@ class Menu extends React.Component {
   }
 
   componentDidUpdate() {
-    console.log(this.state.isOpen)
+   
         document.body.style.maxHeight = this.state.isOpen ? "100vh" : "none";
         document.body.style.overflow = this.state.isOpen ? "hidden": "visible"; 
       

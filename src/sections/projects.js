@@ -4,6 +4,8 @@ import Project from "../components/project"
 import Bg from "../components/bg"
 import bgStyles from "../components/background.module.scss"
 import styles from "./section.module.scss"
+import NavLink from "../components/NavLink"
+
 const Projects = () => (
       
     <StaticQuery
@@ -42,6 +44,9 @@ const Projects = () => (
       id="polygon-project"
       className={bgStyles.projects__section}
       ></Bg>
+         <div className={styles.section__link}>
+        <NavLink refLink = "/articles/" nameLink = "More projects..." color = "rgba(89,81,176,1)" size = "1.5em"/>
+      </div>
       </section>
     )}
     />

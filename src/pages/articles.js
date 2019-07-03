@@ -1,6 +1,5 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-import styles from "../sections/section.module.scss"
+import { graphql } from 'gatsby';
 import Content from '../components/Content';
 import Layout from "../components/layout"
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { StaticQuery, graphql,Link } from 'gatsby';
+import { StaticQuery, graphql } from 'gatsby';
 import styles from "./section.module.scss"
 import PreviewPost from '../components/previewPost';
 import Bg from "../components/bg"
@@ -75,6 +75,7 @@ const Post= ({
       }
     `}
     render={({ contentfulAbout }) => (
+      
       <section className={styles.previews}>
         {contentfulAbout.posts.map((p, i) => (
            <Post key={i} {...p} />
@@ -86,8 +87,12 @@ const Post= ({
       id="polygon-post"
       className={bgStyles.posts__section}
       ></Bg>
-      <NavLink to='/articles/' nameLink="More articles..."></NavLink>
+      <div className={styles.section__link}>
+        <NavLink refLink = "/articles/" nameLink = "More articles..." color = "#0FE1CF" size = "1.5em"/>
+      </div>
       </section>
+      
+     
     )}
     />
   );

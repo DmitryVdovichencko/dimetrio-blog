@@ -38,3 +38,22 @@
 	color:#333;
 
 }
+.content__links{
+	margin:20px auto 20px 0px;
+}
+.content__repo{
+	margin-bottom: -5px;
+}
+  @media screen and (max-width: 400px) {
+  	.content{
+	font-size:0.9em;
+}
+.content__img{
+	height: 70px;
+	width:70px;
+	
+	margin:auto 10px auto 0px;
+	
+}
+       
+      }

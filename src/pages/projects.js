@@ -1,8 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import Content from '../components/Content';
-import Project from "../components/project"
-
 import { graphql } from "gatsby"
 const dateFormat=(dateStr)=>{
   const userDate= new Date(Date.parse(dateStr)),
@@ -33,8 +31,10 @@ export default ({ data, location }) => {
         caption={p.node.name}
         descr={p.node.cvDescription}
         link = {p.node.projectUrl}
+        repo = {p.node.repositoryUrl}
         img={p.node.logo.file.url}
         imgTitle = {p.node.logo.fileName}
+
         date = {dateFormat(p.node.publishedDate)}
       >
       </Content>

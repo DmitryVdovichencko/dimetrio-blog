@@ -44,7 +44,7 @@ const Project = ({
             <p className="project__type">{type}</p>
             <p className="project__descr" dangerouslySetInnerHTML={{__html: content }}></p>
             <a className={styles.project__link} href={projectUrl}> {name} </a>
-            <a  href={repositoryUrl}><InlineIcon height='1.6em' className={styles.project__repo} icon={githubOutline} /></a>
+            <a  href={repositoryUrl}><InlineIcon height='1.6em' className={styles.project__repo} color="rgba(89,81,176,1)" icon={githubOutline} /></a>
     
     
         </div>

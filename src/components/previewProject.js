@@ -17,7 +17,7 @@ const PreviewProject = props => (
             <DateComponent dateStr={props.publishedDate} theme="dark"></DateComponent>
             <p className={styles.preview__descr} dangerouslySetInnerHTML={props.content}></p>
             <p className={styles.preview__links} >
-              <a className={styles.preview__repo} href={props.repositoryUrl}><InlineIcon icon={githubOutline} height="30px" /></a>
+              <a className={styles.preview__repo} href={props.repositoryUrl}><InlineIcon icon={githubOutline} color="rgba(89,81,176,1)" height="30px" /></a>
               <a className={styles.preview__url} href={props.projectUrl}> {props.name}</a>
             </p>
       </div>
