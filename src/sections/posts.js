@@ -88,7 +88,7 @@ const Post= ({
       className={bgStyles.posts__section}
       ></Bg>
       <div className={styles.section__link}>
-        <NavLink refLink = "/articles/" nameLink = "More articles..." color = "#0FE1CF" size = "1.5em"/>
+        <NavLink refLink = "/articles/" nameLink = "More articles..." color = "#FFF" size = "1em"/>
       </div>
       </section>
       

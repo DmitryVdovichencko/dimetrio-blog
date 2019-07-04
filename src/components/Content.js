@@ -22,7 +22,7 @@ const Content = props => {
         
         </div>
         <div className={styles.content__links}>
-        <a className={project__link} href={props.link}> Read more... </a>
+        <a className={project__link} href={ `/${props.link}`}> Read more... </a>
         </div>
         <DateComponent dateStr={props.date}></DateComponent>
       

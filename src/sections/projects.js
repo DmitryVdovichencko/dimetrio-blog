@@ -45,7 +45,7 @@ const Projects = () => (
       className={bgStyles.projects__section}
       ></Bg>
          <div className={styles.section__link}>
-        <NavLink refLink = "/articles/" nameLink = "More projects..." color = "rgba(89,81,176,1)" size = "1.5em"/>
+        <NavLink refLink = "/articles/" nameLink = "More projects..." color = "#0FE1CF" size = "1em"/>
       </div>
       </section>
     )}
