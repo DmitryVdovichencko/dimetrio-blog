@@ -4,8 +4,8 @@ import Project from "../components/project"
 import Bg from "../components/bg"
 import bgStyles from "../components/background.module.scss"
 import styles from "./section.module.scss"
-import NavLink from "../components/NavLink"
 
+import {project__link} from '../components/project.module.scss'
 const Projects = () => (
       
     <StaticQuery
@@ -45,7 +45,8 @@ const Projects = () => (
       className={bgStyles.projects__section}
       ></Bg>
          <div className={styles.section__link}>
-        <NavLink refLink = "/articles/" nameLink = "More projects..." color = "#0FE1CF" size = "1em"/>
+         <a className={project__link} href="/projects/"> More projects... </a>
+        
       </div>
       </section>
     )}

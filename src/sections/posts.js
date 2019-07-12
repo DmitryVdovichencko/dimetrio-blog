@@ -4,7 +4,8 @@ import styles from "./section.module.scss"
 import PreviewPost from '../components/previewPost';
 import Bg from "../components/bg"
 import bgStyles from "../components/background.module.scss"
-import NavLink from "../components/NavLink"
+
+import {project__link} from '../components/project.module.scss'
 
 const dateFormat=(dateStr)=>{
   const userDate= new Date(Date.parse(dateStr)),
@@ -88,7 +89,8 @@ const Post= ({
       className={bgStyles.posts__section}
       ></Bg>
       <div className={styles.section__link}>
-        <NavLink refLink = "/articles/" nameLink = "More articles..." color = "#FFF" size = "1em"/>
+        <a className={project__link} href="/articles/"> More articles... </a>
+        
       </div>
       </section>
       
