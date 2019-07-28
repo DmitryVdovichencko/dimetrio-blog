@@ -9,7 +9,7 @@ export default (props, { data }) => {
     return(
         
          <header>   
-            <Menu header={{headerName:'Dmitry Vdovichencko',headerLink:'/'}} links={links}></Menu>
+            <Menu header={{headerName:'Dmitry Vdovichenko',headerLink:'/'}} links={links}></Menu>
                  { props.displayBg ? <Bg 
       points="0 1, 0 0, 1 0, 1 0.7"
       id="polygon-clip-trapezoid"

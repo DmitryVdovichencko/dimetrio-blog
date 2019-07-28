@@ -1,3 +1,6 @@
+.skill{
+	line-height: 1.5em;
+}
 .skill__header{
     display:flex;
     flex-flow:row nowrap;
@@ -8,7 +11,13 @@
 .skill__img{
     height:32px;
     width: auto;
+    margin-left: 5px;
 }
 .skill__name{
     padding:0px 5px;
+}
+.skill__learning{
+	a{
+		color:blue;
+	}
 }

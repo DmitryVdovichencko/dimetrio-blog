@@ -1,13 +1,16 @@
 
 .previews{
     display: flex;
+
     flex-flow:row wrap;
     margin-bottom: 300px;
+    // position:fixed;
 }
 
 .footer{
 margin: auto;
 margin-bottom: 0px;
+
 color:white;
 font-weight: 200;
 font-size: 0.9em;
